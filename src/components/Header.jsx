@@ -1,23 +1,16 @@
 import React from "react";
 import Logo from "./Logo";
-import Navigation from "./Navigation";
+import Na from "./NavBar";
 import Hamburger from "./Hamburger";
+import NavBar from "./NavBar";
+import TopBar from "./TopBar";
 
 const Header = () => {
   return (
-    <div className="header_container">
-      <div className="container">
-        <div className="row">
-          <div className="col">
-            <div className="header_content d-flex flex-row align-items-center justify-content-start">
-              <Logo />
-              <Navigation />
-              <Hamburger />
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <>
+      <TopBar />
+      <NavBar />
+    </>
   );
 };
 

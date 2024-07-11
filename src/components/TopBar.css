@@ -1,0 +1,19 @@
+.top_bar {
+  border: 2px solid black;
+  padding-block: 1rem;
+
+  /* along with flex_row */
+  display: flex;
+  justify-content: space-between;
+}
+
+a {
+  color: black;
+  font-size: 1.2rem;
+
+  text-decoration: none;
+}
+
+.contact_details {
+  gap: 1rem;
+}
