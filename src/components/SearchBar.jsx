@@ -1,9 +1,12 @@
 import React, { useState } from "react";
 import Data from "../data/mock-data.json";
+// import { CiSearch } from "react-icons/ci";
 
 import "./SearchBar.css";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const SearchBar = () => {
+  // const searchIcon = "<CiSearch />";
   const [query, setQuery] = useState("");
 
   const searchFilter = Data.filter((post) => {
@@ -17,7 +20,7 @@ const SearchBar = () => {
     <>
       <input
         type="text"
-        placeholder="Search..."
+        placeholder={`Search...`}
         onChange={(event) => setQuery(event.target.value)}
       />
       {/* {searchFilter.map((post, index) => (
