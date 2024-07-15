@@ -1,0 +1,38 @@
+.dashboard {
+  background: linear-gradient(135deg, #2d283e, #5d557e);
+  color: whitesmoke;
+  height: 80vh;
+
+  display: grid;
+  place-items: center;
+  text-align: center;
+
+  padding-inline: var(--padding-xlg);
+}
+
+.dashboard h3 {
+  font-size: var(--fs-h3);
+}
+
+.dashboard p {
+  font-size: var(--fs-body-large);
+}
+
+.dashboard_content.flex_column {
+  align-items: center;
+}
+
+.dashboard_content {
+  gap: 2rem;
+}
+
+.dashboard_content .random_verse p {
+  font-style: italic;
+  font-weight: 600;
+  font-size: var(--fs-h4);
+}
+
+.dashboard_content .random_verse h3 {
+  font-style: italic;
+  font-weight: 600;
+}

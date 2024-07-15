@@ -1,6 +1,7 @@
 .top_bar {
   border: 2px solid black;
-  padding-block: 1rem;
+  padding-block: var(--padding-sm);
+  padding-inline: var(--padding-md);
 
   /* along with flex_row */
   display: flex;
