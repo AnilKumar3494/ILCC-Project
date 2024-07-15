@@ -7,41 +7,49 @@ import "./NavBar.css";
 import SearchBar from "./SearchBar";
 
 const NavBar = () => {
+  const navLinks = [
+    {
+      id: 1,
+      path: "/",
+      label: "Home",
+    },
+    {
+      id: 2,
+      path: "/about",
+      label: "About",
+    },
+    {
+      id: 3,
+      path: "/sermons",
+      label: "Sermons",
+    },
+    {
+      id: 4,
+      path: "/events",
+      label: "Events",
+    },
+    {
+      id: 5,
+      path: "/blog",
+      label: "Blog",
+    },
+    {
+      id: 6,
+      path: "/contact",
+      label: "Contact",
+    },
+  ];
+
   return (
     <nav className="main_nav_container ">
       <div className="logo">Logo</div>
 
       <ul className="navlinks ">
-        <li className="active">
-          <Link className="link_attr" to="/">
-            Home
-          </Link>
-        </li>
-        <li>
-          <Link className="link_attr" to="/about">
-            About
-          </Link>
-        </li>
-        <li>
-          <Link className="link_attr" to="/sermons">
-            Sermons
-          </Link>
-        </li>
-        <li>
-          <Link className="link_attr" to="/events">
-            Events
-          </Link>
-        </li>
-        <li>
-          <Link className="link_attr" to="/blog">
-            Blog
-          </Link>
-        </li>
-        <li>
-          <Link className="link_attr" to="/contact">
-            Contact
-          </Link>
-        </li>
+        {navLinks.map((navLinkItems) => (
+          <li key={navLinkItems.id}>
+            <Link to={navLinkItems.path}>{navLinkItems.label}</Link>
+          </li>
+        ))}
       </ul>
 
       <div class="input-box">

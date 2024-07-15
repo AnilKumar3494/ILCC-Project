@@ -1,3 +1,37 @@
+:root {
+  /* Fluid typography for headings */
+  --fs-h1: clamp(2rem, 2.5vw + 1rem, 4rem);
+  --fs-h2: clamp(1.75rem, 2vw + 0.9rem, 3.5rem);
+  --fs-h3: clamp(1.5rem, 1.75vw + 0.75rem, 3rem);
+  --fs-h4: clamp(1.25rem, 1.5vw + 0.5rem, 2.5rem);
+  --fs-h5: clamp(1rem, 1.25vw + 0.25rem, 2rem);
+  --fs-h6: clamp(0.875rem, 1vw + 0.125rem, 1.5rem);
+
+  /* Fluid typography for body text */
+  --fs-body-large: clamp(1rem, 0.9vw + 0.5rem, 1.25rem);
+  --fs-body-medium: clamp(0.875rem, 0.8vw + 0.4rem, 1rem);
+  --fs-body-small: clamp(0.75rem, 0.7vw + 0.3rem, 0.875rem);
+
+  /* Padding */
+  --padding-xlg: clamp(7rem, 2vw + 1rem, 10rem);
+  --padding-lg: clamp(2rem, 2vw + 1rem, 4rem);
+  --padding-md: clamp(1.5rem, 1.5vw + 0.75rem, 3rem);
+  --padding-sm: clamp(0.2rem, 1vw + 0.5rem, 0.3rem);
+
+  --padding-btn: clamp(0.6rem, 1vw + 0.5rem, 0.8rem);
+
+  /* Margin */
+  --margin-lg: clamp(2rem, 2vw + 1rem, 4rem);
+  --margin-md: clamp(1.5rem, 1.5vw + 0.75rem, 3rem);
+  --margin-sm: clamp(1rem, 1vw + 0.5rem, 2rem);
+
+  /* Line Height */
+  --line-height: 1.5;
+
+  /* Container Width */
+  --container-width: clamp(320px, 80vw + 40px, 1200px);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -5,12 +39,13 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
   background-color: #f4f4f4;
   color: #333;
 
   letter-spacing: 1px;
-  line-height: 1.4;
+  /* line-height: var(--line-height-lg); */
+  line-height: var(--line-height);
 }
 
 ul,
@@ -25,4 +60,49 @@ li {
   flex-direction: row;
   align-items: center;
   gap: 0.8rem;
+}
+
+.flex_column {
+  display: flex;
+  flex-direction: column;
+}
+
+/* buttons */
+/* Button.css */
+.button_container {
+  display: flex;
+  gap: 2rem;
+}
+.button {
+  display: inline-block;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+
+  will-change: box-shadow, transform;
+
+  background: radial-gradient(100% 100% at 100% 0%, #e01414 0%, #e43333 100%);
+  box-shadow: 0px 2px 4px rgb(45 35 66 / 40%),
+    0px 7px 13px -3px rgb(45 35 66 / 30%),
+    inset 0px -3px 0px rgb(58 65 111 / 50%);
+  padding: 0 32px;
+  border-radius: 6px;
+  color: #fff;
+
+  font-size: var(--fs-body-large);
+  font-weight: 600;
+  padding-block: var(--padding-btn);
+
+  text-shadow: 0 1px 0 rgb(0 0 0 / 40%);
+
+  transition: box-shadow 0.15s ease, transform 0.15s ease;
+}
+
+.button:hover {
+  background-color: aqua;
+}
+
+.button:active {
+  box-shadow: inset 0px 3px 7px #3c4fe0;
+  transform: translateY(2px);
 }
