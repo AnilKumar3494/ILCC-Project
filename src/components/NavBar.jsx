@@ -42,7 +42,9 @@ const NavBar = () => {
 
   return (
     <nav className="main_nav_container ">
-      <div className="logo">Logo</div>
+      <Link className="logo" to={"/"}>
+        Logo
+      </Link>
 
       <ul className="navlinks ">
         {navLinks.map((navLinkItems) => (

@@ -2,23 +2,23 @@
   "about": [
     {
       "id": 1,
-      "title": "Who we are",
+      "title": "Who We Are",
       "content": "We are rooted in Jesus Christ, nourished by the grace of the sacraments, and live as the body of Christ, spreading the message of the Gospel of Jesus Christ to those around us."
     },
     {
       "id": 2,
-      "title": "Who can be the members of ILCC",
-      "content": "We invite anyone who is baptized Catholic or would like to explore the Catholic faith. Though we are an ethnic Indian community, we warmly welcome all who wish to join us."
-    },
-    {
-      "id": 3,
       "title": "Our Mission Vision and Values",
       "content": "Our vision is for every member to lead a life as a missionary disciple, striving to be formed in the image of Christ, and to live a life of mission with joy and enthusiasm."
     },
     {
-      "id": 4,
+      "id": 3,
       "title": "Archdiocese of Philadelphia",
       "content": "We are a part of the Archdiocese of Philadelphia. The Archdiocese of Philadelphia is a major ecclesiastical jurisdiction of the Catholic Church in Pennsylvania, serving the spiritual needs of Catholics in the region. Established in 1808, it has a rich history of promoting faith, education, and service to the community. The Archdiocese oversees numerous parishes, schools, and charitable organizations, providing guidance and support to help individuals grow in their faith and live out the teachings of Jesus Christ."
+    },
+    {
+      "id": 4,
+      "title": "Who Can be the Members of ILCC",
+      "content": "We invite anyone who is baptized Catholic or would like to explore the Catholic faith. Though we are an ethnic Indian community, we warmly welcome all who wish to join us."
     }
   ],
 
