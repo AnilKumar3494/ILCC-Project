@@ -1,0 +1,16 @@
+.aboutus {
+  border: 3px solid lime;
+}
+
+.aboutus_content {
+  border: 2px solid red;
+  height: 40vh;
+}
+
+.aboutus_images {
+  flex: 0 0 30%;
+}
+
+.aboutus_content {
+  flex: 0 0 70%;
+}

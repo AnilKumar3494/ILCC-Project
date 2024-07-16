@@ -1,3 +1,7 @@
+/* @tailwind base; */
+@tailwind components;
+@tailwind utilities;
+
 :root {
   /* Fluid typography for headings */
   --fs-h1: clamp(2rem, 2.5vw + 1rem, 4rem);
@@ -26,7 +30,7 @@
   --margin-sm: clamp(1rem, 1vw + 0.5rem, 2rem);
 
   /* Line Height */
-  --line-height: 1.5;
+  --line-height: 1.6;
 
   /* Container Width */
   --container-width: clamp(320px, 80vw + 40px, 1200px);
@@ -48,6 +52,13 @@ body {
   line-height: var(--line-height);
 }
 
+h3 {
+  font-size: var(--fs-h3);
+}
+
+p {
+  font-size: var(--fs-body-large);
+}
 ul,
 li {
   text-decoration: none;
@@ -105,4 +116,12 @@ li {
 .button:active {
   box-shadow: inset 0px 3px 7px #3c4fe0;
   transform: translateY(2px);
+}
+
+.container {
+  max-width: 80%;
+  margin: 0 auto;
+
+  border: 5px solid purple;
+  padding: 1rem;
 }

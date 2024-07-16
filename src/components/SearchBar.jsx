@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Data from "../data/mock-data.json";
+// import Data from "../data/dashboard-data.json";
 // import { CiSearch } from "react-icons/ci";
 
 import "./SearchBar.css";
@@ -7,15 +7,15 @@ import "./SearchBar.css";
 
 const SearchBar = () => {
   // const searchIcon = "<CiSearch />";
-  const [query, setQuery] = useState("");
+  // const [query, setQuery] = useState("");
 
-  const searchFilter = Data.filter((post) => {
-    if (query === "") {
-      return post;
-    } else if (post.category.toLowerCase().includes(query.toLowerCase())) {
-      return post;
-    }
-  });
+  // const searchFilter = Data.filter((post) => {
+  //   if (query === "") {
+  //     return post;
+  //   } else if (post.category.toLowerCase().includes(query.toLowerCase())) {
+  //     return post;
+  //   }
+  // });
   return (
     <>
       <input
