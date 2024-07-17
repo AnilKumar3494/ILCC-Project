@@ -1,19 +1,12 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./home.css";
 
 // data imports
 import dashboardData from "../data/dashboard-data.json";
-import { Link } from "react-router-dom";
+import randomVerse from "../utils/getRandomVerse";
 
 const Home = () => {
-  //verses - getting random verse
-  const getRandomVerse = () => {
-    const randomIndex = Math.floor(Math.random() * dashboardData.verses.length);
-    return dashboardData.verses[randomIndex];
-  };
-
-  const randomVerse = getRandomVerse();
-
   return (
     <>
       <section className="dashboard">
