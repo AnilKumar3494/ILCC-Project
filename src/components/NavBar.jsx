@@ -20,21 +20,11 @@ const NavBar = () => {
     },
     {
       id: 3,
-      path: "/sermons",
-      label: "Sermons",
-    },
-    {
-      id: 4,
-      path: "/events",
-      label: "Events",
-    },
-    {
-      id: 5,
       path: "/blog",
       label: "Blog",
     },
     {
-      id: 6,
+      id: 4,
       path: "/contact",
       label: "Contact",
     },

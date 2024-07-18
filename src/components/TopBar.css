@@ -15,6 +15,12 @@ a {
   text-decoration: none;
 }
 
-.contact_details {
-  gap: 1rem;
+.contact_details,
+.social_links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.contact_info {
+  gap: 0.5rem;
 }
