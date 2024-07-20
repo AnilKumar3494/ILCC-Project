@@ -1,0 +1,25 @@
+.footer {
+  border: 4px solid violet;
+  background: linear-gradient(180deg, #fcbc73, #f86e7e);
+}
+.footer_content p {
+  font-style: italic;
+}
+.footer_grid_template {
+  display: grid;
+
+  gap: 1rem;
+
+  border: 4px solid hotpink;
+}
+
+.footer_NavLinks,
+.footer_socialLinks,
+.footer_contactDetails {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+
+  font-size: var(--fs-body-large);
+}

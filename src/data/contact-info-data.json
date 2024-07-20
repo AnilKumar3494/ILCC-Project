@@ -1,0 +1,91 @@
+{
+  "committeeMembers": [
+    {
+      "id": 1,
+      "name": "Fr. Lenin Fernades",
+      "role": "President",
+      "image": "/path/to/fr_lenin_fernades_picture.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Nevin Das",
+      "role": "Secretary",
+      "image": "/path/to/nevin_das_picture.jpg"
+    },
+    {
+      "id": 3,
+      "name": "John Fernadez",
+      "role": "Treasurer",
+      "image": "/path/to/john_fernadez_picture.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Darina Johnson",
+      "role": "Liturgy",
+      "image": "/path/to/darina_johnson_picture.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Christina Pius",
+      "role": "Hospitality",
+      "image": "/path/to/christina_pius_picture.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Peter Damien",
+      "role": "Choir",
+      "image": "/path/to/peter_damien_picture.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Nimmy Das",
+      "role": "Choir",
+      "image": "/path/to/nimmy_das_picture.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Jevelson Simenthy",
+      "role": "Teens/Youth Animator",
+      "image": "/path/to/jevelson_simenthy_picture.jpg"
+    }
+  ],
+
+  "contactInfo": [
+    {
+      "id": 1,
+      "href": "mailto:abc@gmail.com",
+      "address": "abc@gmail.com",
+      "title": "Email",
+      "iconName": "faEnvelope"
+    },
+    {
+      "id": 2,
+      "href": "tel:+1 123-456-789",
+      "address": "+1 123-456-789",
+      "title": "Phone",
+      "iconName": "faPhoneAlt"
+    },
+    {
+      "id": 3,
+      "title": "Address",
+      "href": "https://maps.app.goo.gl/DYndqVoXoMn44d757",
+      "address": "1900 Meadowbrook Rd, Feasterville-Trevose, PA 19053",
+      "iconName": "faLocationDot"
+    }
+  ],
+
+  "socialLinks": [
+    {
+      "id": 1,
+      "href": "https://www.facebook.com",
+      "title": "Facebook",
+      "iconName": "faFacebookF"
+    },
+    {
+      "id": 2,
+      "href": "https://www.instagram.com",
+      "title": "Instagram",
+      "iconName": "faInstagram"
+    }
+  ]
+}

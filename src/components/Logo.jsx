@@ -6,6 +6,7 @@ const Logo = () => {
     <div className="logo_container">
       <a href="/">
         <div className="logo">
+          {/* SVG Preferred */}
           <img src={logo} alt="Logo" />
         </div>
         <div className="logo_text">ILCC</div>
