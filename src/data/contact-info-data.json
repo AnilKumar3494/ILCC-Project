@@ -54,16 +54,26 @@
     {
       "id": 1,
       "href": "mailto:abc@gmail.com",
+      "address": "abc@gmail.com",
       "title": "Email",
       "iconName": "faEnvelope"
     },
     {
       "id": 2,
       "href": "tel:+1 123-456-789",
+      "address": "+1 123-456-789",
       "title": "Phone",
       "iconName": "faPhoneAlt"
+    },
+    {
+      "id": 3,
+      "title": "Address",
+      "href": "https://maps.app.goo.gl/DYndqVoXoMn44d757",
+      "address": "1900 Meadowbrook Rd, Feasterville-Trevose, PA 19053",
+      "iconName": "faLocationDot"
     }
   ],
+
   "socialLinks": [
     {
       "id": 1,

@@ -7,8 +7,7 @@ const NewsLetter = () => {
       <div class="content">
         <h3>Sign Up for NewsLetter</h3>
         <p>
-          Subscribe to our newsletter to receive email updates about our
-          upcoming events and
+          Join for event updates and uplifting
           <span> spiritual reflections.</span>
         </p>
       </div>
