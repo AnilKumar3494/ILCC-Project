@@ -27,7 +27,9 @@ const ContactDetails = ({ maxId }) => {
             key={info.id}
           >
             <FontAwesomeIcon icon={iconMappings[info.iconName]} />
-            <a href={info.href}>{info.address}</a>
+            <a href={info.href} target="_blank" title={info.title}>
+              {info.address}
+            </a>
           </div>
         ))}
     </>

@@ -107,7 +107,8 @@ img {
 
   font-size: var(--fs-body-large);
   font-weight: 600;
-  padding-block: var(--padding-btn);
+  padding-top: 0.5rem;
+  padding-bottom: 0.8rem;
   padding-inline: 1.5rem;
 
   text-shadow: 0 1px 0 rgb(0 0 0 / 40%);
