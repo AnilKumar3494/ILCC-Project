@@ -21,7 +21,7 @@ const About = () => (
               <img src="" alt={`${data.title} Image`} />
             </div>
             <div className="aboutus_content ">
-              <h2>{data.title}</h2>
+              <h3>{data.title}</h3>
               <p>{data.content}</p>
             </div>
           </div>

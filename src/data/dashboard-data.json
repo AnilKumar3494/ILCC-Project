@@ -21,6 +21,7 @@
       "label": "Contact"
     }
   ],
+
   "about": [
     {
       "id": 1,
@@ -89,6 +90,33 @@
       "id": 9,
       "reference": "Psalm 27:1",
       "text": "The Lord is my light and my salvation—whom shall I fear? The Lord is the stronghold of my life—of whom shall I be afraid?"
+    }
+  ],
+
+  "sermons": [
+    {
+      "id": 1,
+      "imgSrc": "https://i0.wp.com/spiritandtruthpublishing.com/wp-content/uploads/2021/07/131985845_s.jpg?ssl=1",
+      "title": "SERMON ON PRAYER: RUNNING WELL, FINISHING STRONG",
+      "brother": "Tyrion Lannister",
+      "categories": ["God", "Prayer"],
+      "congregation": "Okriphere"
+    },
+    {
+      "id": 2,
+      "imgSrc": "https://i0.wp.com/spiritandtruthpublishing.com/wp-content/uploads/2021/07/131985845_s.jpg?ssl=1",
+      "title": "SERMON ON FAITH: BELIEVING IN THE UNSEEN",
+      "brother": "Jon Snow",
+      "categories": ["Faith", "Belief"],
+      "congregation": "Winterfell"
+    },
+    {
+      "id": 3,
+      "imgSrc": "https://i0.wp.com/spiritandtruthpublishing.com/wp-content/uploads/2021/07/131985845_s.jpg?ssl=1",
+      "title": "SERMON ON LOVE: UNCONDITIONAL AND EVERLASTING",
+      "brother": "Daenerys Targaryen",
+      "categories": ["Love", "Compassion"],
+      "congregation": "Meereen"
     }
   ]
 }

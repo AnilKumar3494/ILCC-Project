@@ -21,6 +21,7 @@ const NavBar = () => {
             <Link
               to={navLinkItems.path}
               title={navLinkItems.label}
+              className="link"
             >{`${navLinkItems.label}`}</Link>
           </li>
         ))}

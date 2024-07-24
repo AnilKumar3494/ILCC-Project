@@ -15,7 +15,10 @@ const SocialLinks = () => {
     <>
       {socialLinksData.socialLinks.map((socialInfo) => (
         <a href={socialInfo.href} key={socialInfo.id} title={socialInfo.title}>
-          <FontAwesomeIcon icon={iconMappings[socialInfo.iconName]} />
+          <FontAwesomeIcon
+            icon={iconMappings[socialInfo.iconName]}
+            className="fa_icons"
+          />
         </a>
       ))}
     </>

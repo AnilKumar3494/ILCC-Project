@@ -4,49 +4,49 @@
       "id": 1,
       "name": "Fr. Lenin Fernades",
       "role": "President",
-      "image": "/path/to/fr_lenin_fernades_picture.jpg"
+      "imgSrc": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
     },
     {
       "id": 2,
       "name": "Nevin Das",
       "role": "Secretary",
-      "image": "/path/to/nevin_das_picture.jpg"
+      "imgSrc": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
     },
     {
       "id": 3,
       "name": "John Fernadez",
       "role": "Treasurer",
-      "image": "/path/to/john_fernadez_picture.jpg"
+      "imgSrc": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
     },
     {
       "id": 4,
       "name": "Darina Johnson",
       "role": "Liturgy",
-      "image": "/path/to/darina_johnson_picture.jpg"
+      "imgSrc": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
     },
     {
       "id": 5,
       "name": "Christina Pius",
       "role": "Hospitality",
-      "image": "/path/to/christina_pius_picture.jpg"
+      "imgSrc": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
     },
     {
       "id": 6,
       "name": "Peter Damien",
       "role": "Choir",
-      "image": "/path/to/peter_damien_picture.jpg"
+      "imgSrc": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
     },
     {
       "id": 7,
       "name": "Nimmy Das",
       "role": "Choir",
-      "image": "/path/to/nimmy_das_picture.jpg"
+      "imgSrc": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
     },
     {
       "id": 8,
       "name": "Jevelson Simenthy",
       "role": "Teens/Youth Animator",
-      "image": "/path/to/jevelson_simenthy_picture.jpg"
+      "imgSrc": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
     }
   ],
 
