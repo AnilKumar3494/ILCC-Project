@@ -22,13 +22,13 @@ const ContactDetails = ({ maxId }) => {
         .filter((info) => info.id <= maxId)
         .map((info) => (
           <div
-            className="contact_info flex_row"
+            className="contact_info flex_row hover"
             title={info.title}
             key={info.id}
           >
             <FontAwesomeIcon
               icon={iconMappings[info.iconName]}
-              className="fa_icons"
+              className="fa_icons "
             />
             <a href={info.href} target="_blank" title={info.title}>
               {info.address}

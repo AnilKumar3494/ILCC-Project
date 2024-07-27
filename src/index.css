@@ -31,6 +31,8 @@
 
   /* Container Width */
   --container-width: clamp(320px, 80vw + 40px, 1200px);
+
+  --hover-color: #e01414;
 }
 
 *,
@@ -56,6 +58,10 @@ body {
   letter-spacing: 1px;
   /* line-height: var(--line-height-lg); */
   line-height: var(--line-height);
+}
+
+section {
+  margin-bottom: 2rem;
 }
 
 h1,
@@ -113,6 +119,14 @@ li {
 img {
   max-width: 100%;
   display: block;
+}
+
+.padding_inline_lg {
+  padding-inline: var(--padding-lg);
+}
+
+.padding_inline_md {
+  padding-inline: var(--padding-md);
 }
 
 /* Flex Classes */

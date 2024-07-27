@@ -72,5 +72,9 @@
       "city": "New York",
       "landmark": "Statue of Liberty"
     }
-  ]
+  ],
+  "localImages": {
+    "id": 1,
+    "src": "../assets/images/group-pic.jpeg"
+  }
 }

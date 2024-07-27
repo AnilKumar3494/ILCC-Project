@@ -14,7 +14,7 @@ const Footer = () => {
   const lastID = navLinksData.navlinks[navLinksData.navlinks.length - 1].id;
 
   return (
-    <section className="footer footer_grid_template">
+    <footer className="footer footer_grid_template">
       <div className="footer_content">
         <div className="logo">
           {/* <Logo /> */}
@@ -45,7 +45,7 @@ const Footer = () => {
         <p>Follow Us:</p>
         <SocialLinks />
       </div>
-    </section>
+    </footer>
   );
 };
 

@@ -1,23 +1,47 @@
 .dashboard {
-  background: linear-gradient(135deg, #2d283e, #5d557e);
   color: whitesmoke;
-  height: 80vh;
+  height: 85vh;
 
   display: grid;
   place-items: center;
   text-align: center;
 
-  padding-inline: var(--padding-xlg);
+  /* padding-inline: var(--padding-xlg); */
+}
+
+.dashboard.bg_img {
+  background: url(../assets/images/church-main.jpg);
+  background-size: cover;
+  background-position: center calc(10%);
+  background-repeat: no-repeat;
+
+  position: relative;
+}
+.dashboard.bg_img::after {
+  content: "";
+  position: absolute;
+  background-color: rgb(0, 0, 0, 0.4);
+  inset: 0;
+
+  /* z-index: -1; */
 }
 
 .dashboard_content {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 5rem;
+  gap: 7rem;
   height: 100%;
+  width: 100%;
 
-  border: 5px solid lime;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+  /* border: 5px solid lime; */
+
+  backdrop-filter: blur(1px);
 }
 
 .dashboard_content .random_verse h2 {
@@ -33,10 +57,13 @@
 .dashboard .content_and_buttons {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
+  text-align: center;
 
-  gap: 3rem;
+  margin-top: 4rem;
+
+  gap: 2rem;
 }
 
 .heading_content {

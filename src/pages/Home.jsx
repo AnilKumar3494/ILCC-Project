@@ -13,9 +13,9 @@ import imagesDataJSON from "../data/images-data.json";
 
 const Home = () => {
   return (
-    <>
-      <section className="dashboard">
-        <div className="dashboard_content">
+    <main>
+      <section className="dashboard bg_img ">
+        <div className="dashboard_content padding_inline_lg">
           {/* Getting a Random Verse  */}
           <div className="random_verse">
             <h2>{randomVerse.text}</h2>
@@ -61,7 +61,7 @@ const Home = () => {
         </div>
         <ImageGallery imagesDataJSON={imagesDataJSON} />
       </section>
-    </>
+    </main>
   );
 };
 

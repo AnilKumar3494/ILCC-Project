@@ -63,7 +63,12 @@ const ImageGallery = ({ imagesDataJSON, sermonsDataJSON, contactInfoData }) => {
                 className="card_img"
               />
               <div className="card_content">
-                <h6 className="card_title">{sermonsInfo.title}</h6>
+                <h6 className="card_title">
+                  {
+                    // sermonsInfo.split()
+                    sermonsInfo.title
+                  }
+                </h6>
                 <p className="card_price">{`${sermonsInfo.brother}`}</p>
                 <p>{sermonsInfo.congregation}</p>
                 {/* <p className="card_description">Located in {sermonsInfo.city}</p> */}

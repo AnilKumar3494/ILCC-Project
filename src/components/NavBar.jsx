@@ -1,7 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSearch } from "@fortawesome/free-solid-svg-icons";
+import { Link, useLocation } from "react-router-dom";
 
 import navLinks from "../data/dashboard-data.json";
 
@@ -9,6 +7,7 @@ import "./NavBar.css";
 import SearchBar from "./SearchBar";
 
 const NavBar = () => {
+  const location = useLocation();
   return (
     <nav className="main_nav_container ">
       <Link className="logo" to={"/"}>
@@ -16,13 +15,15 @@ const NavBar = () => {
       </Link>
 
       <ul className="navlinks ">
-        {navLinks.navlinks.map((navLinkItems) => (
-          <li key={navLinkItems.id}>
+        {navLinks.navlinks.map((navLinkItem) => (
+          <li key={navLinkItem.id}>
             <Link
-              to={navLinkItems.path}
-              title={navLinkItems.label}
-              className="link"
-            >{`${navLinkItems.label}`}</Link>
+              to={navLinkItem.path}
+              title={navLinkItem.label}
+              className={`link nav_item hover ${
+                location.pathname === navLinkItem.path ? "active" : ""
+              }`}
+            >{`${navLinkItem.label}`}</Link>
           </li>
         ))}
       </ul>

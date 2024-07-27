@@ -12,9 +12,10 @@ import contactInfoData from "../data/contact-info-data.json";
 const Contact = () => {
   return (
     <div>
-      <h1>This will be the Contact Page</h1>
+      <h2>This will be the Contact Page</h2>
 
       <section className="contact_members">
+        <h4>Our Dedicated Team</h4>
         <ImageGallery contactInfoData={contactInfoData} />
       </section>
 
