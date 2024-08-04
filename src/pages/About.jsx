@@ -2,6 +2,7 @@ import React from "react";
 import dashboardData from "../data/dashboard-data.json";
 
 import "./about.css";
+import SocialMediaIntegration from "../components/SocialMediaIntegration";
 
 const About = () => (
   <>
@@ -26,6 +27,9 @@ const About = () => (
             </div>
           </div>
         ))}
+      </section>
+      <section>
+        <SocialMediaIntegration />
       </section>
     </main>
   </>
