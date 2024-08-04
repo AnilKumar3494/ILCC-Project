@@ -33,8 +33,7 @@
   flex: 0 0 60%;
 }
 .newsletter .email input {
-  max-width: 50%;
-
+  width: 16rem;
   font-size: 1.1rem;
   outline: none;
   border: none;
@@ -51,5 +50,5 @@
   font-size: 1.1rem;
 
   color: #000;
-  opacity: 0.5;
+  opacity: 0.6;
 }

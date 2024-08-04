@@ -1,0 +1,11 @@
+.instagram_container {
+  max-width: 80%;
+  min-width: 326px;
+
+  margin: 1rem auto;
+}
+
+.instagram-media {
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5), 0 1px 10px 0 rgba(0, 0, 0, 0.15);
+  width: 100%;
+}

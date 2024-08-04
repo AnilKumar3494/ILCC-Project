@@ -5,7 +5,7 @@ const NewsLetter = () => {
   return (
     <section class="newsletter section_p1">
       <div class="content">
-        <h3>Sign Up for NewsLetter</h3>
+        <h3>Sign Up for Our Newsletter</h3>
         <p>
           Join for event updates and uplifting
           <span> spiritual reflections.</span>
@@ -13,7 +13,7 @@ const NewsLetter = () => {
       </div>
 
       <div class="email">
-        <input type="text" placeholder="Your E-mail Address" />
+        <input type="text" placeholder="email: jondoe@email.com" />
         <button className="button">Sign Up</button>
       </div>
     </section>

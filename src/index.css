@@ -3,18 +3,15 @@
 @tailwind utilities;
 
 :root {
-  /* Fluid typography for headings */
-  --fs-h1: clamp(2rem, 2.5vw + 1rem, 4rem);
-  --fs-h2: clamp(1.75rem, 2vw + 0.9rem, 3.5rem);
-  --fs-h3: clamp(1.5rem, 1.75vw + 0.75rem, 3rem);
-  --fs-h4: clamp(1.25rem, 1.5vw + 0.5rem, 2.5rem);
-  --fs-h5: clamp(1rem, 1.25vw + 0.25rem, 2rem);
-  --fs-h6: clamp(0.875rem, 1vw + 0.125rem, 1.5rem);
-
-  /* Fluid typography for body text */
-  --fs-body-large: clamp(1rem, 0.9vw + 0.5rem, 1.25rem);
-  --fs-body-medium: clamp(0.875rem, 0.8vw + 0.4rem, 1rem);
-  --fs-body-small: clamp(0.75rem, 0.7vw + 0.3rem, 0.875rem);
+  --fs-100: clamp(0.5rem, 1vw + 0.375rem, 0.625rem);
+  --fs-200: clamp(0.6rem, 1vw + 0.4625rem, 0.7625rem);
+  --fs-300: clamp(0.7rem, 1vw + 0.5475rem, 0.8975rem);
+  --fs-400: clamp(0.8rem, 1vw + 0.625rem, 1.125rem);
+  --fs-500: clamp(0.9rem, 1vw + 0.75rem, 1.25rem);
+  --fs-600: clamp(1rem, 1vw + 1rem, 1.75rem);
+  --fs-700: clamp(1.2rem, 1vw + 1.25rem, 2.25rem);
+  --fs-800: clamp(1.4rem, 1vw + 1.5rem, 2.75rem);
+  --fs-900: clamp(1.6rem, 1vw + 1.75rem, 3.25rem);
 
   /* Padding */
   --padding-xlg: clamp(7rem, 2vw + 1rem, 10rem);
@@ -34,12 +31,23 @@
 
   /* Container Width */
   --container-width: clamp(320px, 80vw + 40px, 1200px);
+
+  --hover-color: #e01414;
 }
 
-* {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
 }
 
 body {
@@ -52,12 +60,54 @@ body {
   line-height: var(--line-height);
 }
 
+section {
+  margin-bottom: 2rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
+  line-height: 1.1;
+}
+
+/* Make images easier to work with and responsive*/
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+h2 {
+  font-size: var(--fs-900);
+}
+
 h3 {
-  font-size: var(--fs-h3);
+  font-size: var(--fs-800);
+}
+h4 {
+  font-size: var(--fs-700);
+}
+h5 {
+  font-size: var(--fs-600);
+}
+h6 {
+  font-size: var(--fs-500);
 }
 
 p {
-  font-size: var(--fs-body-large);
+  font-size: var(--fs-500);
+}
+
+.link {
+  cursor: pointer;
+}
+
+.fa_icons {
+  font-size: var(--fs-500);
 }
 
 ul,
@@ -71,16 +121,19 @@ img {
   display: block;
 }
 
+.padding_inline_lg {
+  padding-inline: var(--padding-lg);
+}
+
+.padding_inline_md {
+  padding-inline: var(--padding-md);
+}
+
 /* Flex Classes */
 .flex_row {
   display: flex;
   flex-direction: row;
   align-items: center;
-}
-
-.flex_column {
-  display: flex;
-  flex-direction: column;
 }
 
 /* buttons */
@@ -105,10 +158,11 @@ img {
   border-radius: 6px;
   color: #fff;
 
-  font-size: var(--fs-body-large);
+  font-size: var(--fs-500);
   font-weight: 600;
-  padding-block: var(--padding-btn);
-  padding-inline: 1.5rem;
+  padding-top: 0.7rem;
+  padding-bottom: 0.8rem;
+  padding-inline: 1.8rem;
 
   text-shadow: 0 1px 0 rgb(0 0 0 / 40%);
 

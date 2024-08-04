@@ -8,15 +8,17 @@ import Logo from "./Logo";
 import SocialLinks from "./SocialIcons";
 import ContactDetails from "./ContactDetails";
 import randomVerse from "../utils/getRandomVerse";
-import navLinks from "../data/dashboard-data.json";
+import navLinksData from "../data/dashboard-data.json";
 
 const Footer = () => {
+  const lastID = navLinksData.navlinks[navLinksData.navlinks.length - 1].id;
+
   return (
-    <section className="footer footer_grid_template">
+    <footer className="footer footer_grid_template">
       <div className="footer_content">
         <div className="logo">
           {/* <Logo /> */}
-          <h3>Logo</h3>
+          <h2>Logo</h2>
           <p>{`"${randomVerse.text}" ~ ${randomVerse.reference}`}</p>
         </div>
       </div>
@@ -25,12 +27,12 @@ const Footer = () => {
 
       <div className="footer_NavLinks">
         {/* this could be component */}
-        {navLinks.navlinks.map((navLinkItems) => (
+        {navLinksData.navlinks.map((navLinkItems) => (
           <li key={navLinkItems.id}>
-            <Link
-              to={navLinkItems.path}
-              title={navLinkItems.label}
-            >{`${navLinkItems.label} |`}</Link>
+            <Link to={navLinkItems.path} title={navLinkItems.label}>
+              {navLinkItems.label}
+              {navLinkItems.id !== lastID && ` |`}
+            </Link>
           </li>
         ))}
       </div>
@@ -40,10 +42,10 @@ const Footer = () => {
       </div>
 
       <div className="footer_socialLinks">
-        <h4>Follow Us:</h4>
+        <p>Follow Us:</p>
         <SocialLinks />
       </div>
-    </section>
+    </footer>
   );
 };
 
