@@ -4,24 +4,20 @@ import "./ImageGallery.css";
 // import imagesDataJSON from "../data/images-data.json";
 // import committeeMembersData from "../data/contact-info-data.json";
 
-const ImageGallery = ({ imagesDataJSON, sermonsDataJSON, contactInfoData }) => {
-  if (imagesDataJSON) {
+const ImageGallery = ({ localImages, sermonsDataJSON, contactInfoData }) => {
+  if (localImages) {
     return (
       <div className="grid_container">
-        <div className="product_grid">
-          {imagesDataJSON.imagesData.map((imgInfo) => (
-            <div className="card stacked" key={imgInfo.id}>
-              <img
-                src={imgInfo.src}
-                alt={imgInfo.landmark}
-                className="card_img"
-              />
-              {/* <div className="card_content">
-                <h2 className="card_title">{imgInfo.landmark}</h2>
-                <p className="card_price">{`$${imgInfo.rating}`}</p>
-                <p className="card_description">Located in {imgInfo.city}</p>
-              </div> */}
-            </div>
+        <div className={`local_imgs_container`}>
+          {localImages.map((imgInfo, index) => (
+            <img
+              key={index}
+              src={imgInfo.imgSrc}
+              alt={imgInfo.title}
+              className={`local_img ${
+                imgInfo.className ? imgInfo.className : ""
+              }`}
+            />
           ))}
         </div>
       </div>

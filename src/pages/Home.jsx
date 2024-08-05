@@ -11,6 +11,8 @@ import sermonsDataJSON from "../data/dashboard-data.json";
 import randomVerse from "../utils/getRandomVerse";
 import imagesDataJSON from "../data/images-data.json";
 
+import { localImages } from "../data/localImages";
+
 const Home = () => {
   return (
     <main>
@@ -59,7 +61,8 @@ const Home = () => {
           <h4>IMAGES COLLECTION</h4>
           <p>Our lives in the word of God</p>
         </div>
-        <ImageGallery imagesDataJSON={imagesDataJSON} />
+
+        <ImageGallery localImages={localImages} />
       </section>
     </main>
   );
