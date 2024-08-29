@@ -1,18 +1,19 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
+import { RxHamburgerMenu } from "react-icons/rx";
 
 import navLinks from "../data/dashboard-data.json";
 
 import "./NavBar.css";
-import SearchBar from "./SearchBar";
 
 const NavBar = () => {
   const location = useLocation();
   return (
-    <nav className="main_nav_container ">
-      <Link className="logo" to={"/"}>
-        Logo
-      </Link>
+    <nav className="main_nav_container inline_padding">
+      {/* add hamburgermenuu here */}
+      <div className="hamburgermenu">
+        <RxHamburgerMenu />
+      </div>
 
       <ul className="navlinks ">
         {navLinks.navlinks.map((navLinkItem) => (
@@ -23,14 +24,16 @@ const NavBar = () => {
               className={`link nav_item hover ${
                 location.pathname === navLinkItem.path ? "active" : ""
               }`}
-            >{`${navLinkItem.label}`}</Link>
+            >
+              {navLinkItem.id === 3 ? (
+                <img src={navLinkItem.src} alt={navLinkItem.label} />
+              ) : (
+                `${navLinkItem.label}`
+              )}
+            </Link>
           </li>
         ))}
       </ul>
-
-      <div class="input-box">
-        <SearchBar />
-      </div>
     </nav>
   );
 };

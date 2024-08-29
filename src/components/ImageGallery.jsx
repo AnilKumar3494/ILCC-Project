@@ -1,9 +1,6 @@
 import React from "react";
 import "./ImageGallery.css";
 
-// import imagesDataJSON from "../data/images-data.json";
-// import committeeMembersData from "../data/contact-info-data.json";
-
 const ImageGallery = ({ localImages, sermonsDataJSON, contactInfoData }) => {
   if (localImages) {
     return (
@@ -50,7 +47,7 @@ const ImageGallery = ({ localImages, sermonsDataJSON, contactInfoData }) => {
   if (sermonsDataJSON) {
     return (
       <div className="grid_container">
-        <div className="product_grid">
+        <div className="sermons_grid">
           {sermonsDataJSON.sermons.map((sermonsInfo) => (
             <div className="members_card stacked" key={sermonsInfo.id}>
               <img

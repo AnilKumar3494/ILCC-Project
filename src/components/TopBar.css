@@ -1,26 +1,28 @@
 .top_bar {
-  border: 2px solid black;
-  padding-block: var(--padding-sm);
-  padding-inline: var(--padding-md);
+  border-bottom: 2px solid black;
+  padding-block: var(--fs-200);
 
   /* along with flex_row */
   display: flex;
   justify-content: space-between;
 }
 
-a {
-  color: black;
-  font-size: 1.2rem;
-
-  text-decoration: none;
-}
-
 .contact_details,
 .social_links {
   display: flex;
+  align-items: center;
   gap: 1.5rem;
 }
 
 .contact_info {
-  gap: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: var(--fs-100);
+}
+
+@media (max-width: 800px) {
+  .contact_details,
+  .social_links {
+    gap: 0.8rem;
+  }
 }

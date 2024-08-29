@@ -12,11 +12,17 @@
     },
     {
       "id": 3,
+      "path": "/",
+      "label": "Logo",
+      "src": "#"
+    },
+    {
+      "id": 4,
       "path": "/blog",
       "label": "Blog"
     },
     {
-      "id": 4,
+      "id": 5,
       "path": "/contact",
       "label": "Contact"
     }

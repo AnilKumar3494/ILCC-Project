@@ -42,7 +42,10 @@
 }
 
 .local_img {
-  object-fit: contain;
+  object-fit: cover;
+  height: 100%;
+
+  /* border: 12px solid orange; */
 }
 /* END image gallery with local images */
 
@@ -53,10 +56,16 @@
   position: relative;
 }
 
+.sermons_grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(240px, 1fr));
+  /* width: 300vw; */
+  gap: 1.2rem;
+}
+
 .members_card {
   border: 6px solid navy;
   aspect-ratio: 1 / var(--aspect-ratio-variable);
-  margin-left: 2rem;
 
   position: relative;
 }
