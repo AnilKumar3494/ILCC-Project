@@ -7,6 +7,7 @@ import Blog from "./pages/Blog";
 import Contact from "./pages/Contact";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+
 // import Header from "./components/Header";
 
 function App() {

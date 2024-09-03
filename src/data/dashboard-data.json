@@ -10,19 +10,14 @@
       "path": "/about",
       "label": "About"
     },
+
     {
       "id": 3,
-      "path": "/",
-      "label": "Logo",
-      "src": "#"
-    },
-    {
-      "id": 4,
       "path": "/blog",
       "label": "Blog"
     },
     {
-      "id": 5,
+      "id": 4,
       "path": "/contact",
       "label": "Contact"
     }
@@ -103,26 +98,26 @@
     {
       "id": 1,
       "imgSrc": "https://i0.wp.com/spiritandtruthpublishing.com/wp-content/uploads/2021/07/131985845_s.jpg?ssl=1",
-      "title": "SERMON ON PRAYER: RUNNING WELL, FINISHING STRONG",
-      "brother": "Tyrion Lannister",
+      "title": "Sermon Title Here",
+      "description": "Short Description goes here",
       "categories": ["God", "Prayer"],
-      "congregation": "Okriphere"
+      "date_time": "Date & Time Here"
     },
     {
       "id": 2,
       "imgSrc": "https://i0.wp.com/spiritandtruthpublishing.com/wp-content/uploads/2021/07/131985845_s.jpg?ssl=1",
-      "title": "SERMON ON FAITH: BELIEVING IN THE UNSEEN",
-      "brother": "Jon Snow",
+      "title": "Sermon Title here",
+      "description": "Short Description goes here",
       "categories": ["Faith", "Belief"],
-      "congregation": "Winterfell"
+      "date_time": "Date & Time Here"
     },
     {
       "id": 3,
       "imgSrc": "https://i0.wp.com/spiritandtruthpublishing.com/wp-content/uploads/2021/07/131985845_s.jpg?ssl=1",
-      "title": "SERMON ON LOVE: UNCONDITIONAL AND EVERLASTING",
-      "brother": "Daenerys Targaryen",
+      "title": "Sermon Title here",
+      "description": "Short Description goes here",
       "categories": ["Love", "Compassion"],
-      "congregation": "Meereen"
+      "date_time": "Date & Time Here"
     }
   ]
 }

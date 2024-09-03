@@ -1,6 +1,6 @@
 .dashboard {
   color: white;
-  height: 85vh;
+  height: 85dvh;
 
   display: grid;
   place-items: center;
@@ -49,7 +49,7 @@
   font-weight: 600;
 }
 
-.dashboard_content .random_verse h5 {
+.dashboard_content .random_verse p {
   font-style: italic;
   font-weight: 500;
 }

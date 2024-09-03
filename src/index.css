@@ -5,60 +5,37 @@
   --ff-secondary: Bungee, cursive;
   --ff-accent: Bungee Shade, cursive;
 
-  --clr-neutral-100: #ffffff;
-  --clr-neutral-200: #e6e6e6;
-  --clr-neutral-300: #b3b3b3;
-  --clr-neutral-400: #999999;
-  --clr-neutral-500: #808080;
-  --clr-neutral-600: #666666;
-  --clr-neutral-700: #4d4d4d;
-  --clr-neutral-800: #1a1a1a;
-  --clr-neutral-900: #000000;
+  /* Palette 1: Warm and Inviting */
+  --primary-color: #bf5f00;
+  --secondary-color: #f5f5f5;
+  --accent-color: #6b8e23;
+  --text-color: #332200;
+  --background-color: #f8f8f8;
+  --link-color: #bf5f00;
+  --hover-link-color: #6b8e23;
 
-  --clr-primary-100: #e6f5ff;
-  --clr-primary-200: #b3e5ff;
-  --clr-primary-300: #80d4ff;
-  --clr-primary-400: #4dc4ff;
-  --clr-primary-500: #1ab3ff;
-  --clr-primary-600: #0099e6;
-  --clr-primary-700: #007acc;
-  --clr-primary-800: #005c99;
-  --clr-primary-900: #003d66;
-
-  --clr-secondary-100: #f2e6ff;
-  --clr-secondary-200: #d9b3ff;
-  --clr-secondary-300: #bf80ff;
-  --clr-secondary-400: #a64dff;
-  --clr-secondary-500: #8c1aff;
-  --clr-secondary-600: #7314e6;
-  --clr-secondary-700: #590fcc;
-  --clr-secondary-800: #400a99;
-  --clr-secondary-900: #260666;
-
-  --clr-accent-main: orangered;
-  --clr-accent-secondary: purple;
-
-  --primary-color: #2e3d34; /* Dark Green */
-  --secondary-color: #8c7a67; /* Soft Brown */
-  --accent-color: #d6a456; /* Gold */
-  --neutral-color: #ffffff; /* White */
-  --text-color: #e8dbc8; /* Cream */
-  --danger-color: #e74c3c;
-  --danger-color-dark: #c0392b;
+  /* Classic and Elegant" */
+  --primary-color: #002f5e;
+  --secondary-color: #f5f5f5;
+  --accent-color: #d4af37;
+  --text-color: #333333;
+  --background-color: #f8f8f8;
+  --link-color: #00468b;
+  --hover-link-color: #d4af37;
 
   /* Smaller Screens below 800 */
   --fs-100: 0.425rem;
   --fs-200: 0.725rem;
   --fs-300: 0.5rem;
-  --fs-400: 0.6rem;
+  --fs-400: 0.65rem;
   --fs-500: 0.825rem;
   --fs-550: 1rem;
-  --fs-600: 1.25rem;
+  --fs-600: 1rem;
   --fs-700: 1.25rem;
   --fs-800: 2rem;
 
   --inline-padding: 0.5rem;
-  --page-gap: ;
+  /* --page-gap: ; */
 }
 /* Medium screens (min-width: 50em or 800px) */
 @media only screen and (min-width: 50em) {
@@ -194,38 +171,44 @@ body {
   font-family: var(--ff-primary);
 
   /* white */
-  background-color: var(--clr-neutral-100);
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--accent-color);
 }
 
 h1 {
   font-size: var(--fs-700);
-  color: var(--accent-color);
 }
 h2 {
   font-size: var(--fs-600);
-  color: var(--accent-color);
 }
 h3 {
   font-size: var(--fs-500);
-  color: var(--accent-color);
 }
 h4 {
   font-size: var(--fs-400);
-  color: var(--clr-neutral-700);
 }
 
 p {
   font-size: var(--fs-500);
-  color: var(--text-color);
 }
 
 a {
   font-size: var(--fs-500);
-  color: var(--clr-neutral-800);
+  color: var(--link-color);
 }
 
 a:hover {
   text-decoration: underline;
+  color: var(--hover-link-color);
 }
 
 .fa_icons {
@@ -273,6 +256,12 @@ a:hover {
   text-shadow: 0 1px 0 rgb(0 0 0 / 40%);
 
   transition: box-shadow 0.15s ease, transform 0.15s ease;
+
+  @media (max-width: 800px) {
+    padding-top: 0.4rem;
+    padding-bottom: 0.5rem;
+    padding-inline: 1rem;
+  }
 }
 
 .button:active {

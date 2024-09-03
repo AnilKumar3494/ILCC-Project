@@ -20,8 +20,8 @@ const Home = () => {
         <div className="dashboard_content padding_inline_lg">
           {/* Getting a Random Verse  */}
           <div className="random_verse">
-            <h2>{randomVerse.text}</h2>
-            <h5>{`~${randomVerse.reference}`}</h5>
+            <h2>{`${randomVerse.text}`}</h2>
+            <p>{`- ${randomVerse.reference}`}</p>
           </div>
 
           <div className="content_and_buttons">
@@ -30,7 +30,7 @@ const Home = () => {
               .filter((item) => item.title.toLowerCase() === "who we are")
               .map((item) => (
                 <div key={item.id} className="who_we_are">
-                  <h4>{item.title}</h4>
+                  <h2>{item.title}</h2>
                   <p>{item.content}</p>
                 </div>
               ))}

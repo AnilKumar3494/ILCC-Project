@@ -1,29 +1,40 @@
 .footer {
   border: 4px solid violet;
-  background: linear-gradient(180deg, #fcbc73, #f86e7e);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
-.footer_content p {
+
+.logo_container {
+  display: flex;
+  gap: 0.3rem;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.logo_container p {
   font-style: italic;
 }
-.footer_grid_template {
-  display: grid;
+.footer_links {
+  display: flex;
+  /* flex-direction: column; */
+  gap: 0.5rem;
 
-  gap: 1rem;
-
-  border: 4px solid hotpink;
+  /* border-top: 2px solid black; */
 }
 
 .footer_NavLinks,
-.footer_socialLinks,
-.footer_contactDetails {
+.footer_contactDetails,
+.footer_socialLinks {
   display: flex;
-  gap: 0.5rem;
-  align-items: center;
-  justify-content: center;
-
-  font-size: var(--fs-body-large);
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: var(--fs-500);
+  gap: 0.3rem;
 }
 
-.footer_contactDetails {
-  gap: 2rem;
+.footer_NavLinks {
+  flex: 0 0 30%;
+}
+.footer_NavLinks li {
+  padding-left: 0.5rem;
 }
