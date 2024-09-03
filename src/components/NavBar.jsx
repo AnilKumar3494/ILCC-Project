@@ -41,9 +41,9 @@ const NavBar = () => {
     <nav className="main_nav_container inline_padding" ref={navRef}>
       {/* Logo and Hamburger menu */}
       <div className="small_navlinks">
-        <div className="logo_container">
+        <Link to="/" className="logo_container">
           <img src={navLinks.navlinks[2]} alt="ILCC" className="logo" />
-        </div>
+        </Link>
         <div className="hamburgermenu" onClick={toggleMenu}>
           {isMenuOpen ? <AiOutlineClose /> : <RxHamburgerMenu />}{" "}
           {/* Toggle icons */}

@@ -14,14 +14,16 @@ const Footer = () => {
 
   return (
     <footer className="footer">
-      <div className="logo_container">
+      <section className="logo_container">
         <img src={navLinks.navlinks[2]} alt="ILCC" className="logo" />
         <p>{`"${randomVerse.text}" ~ ${randomVerse.reference}`}</p>
-      </div>
+      </section>
 
-      <NewsLetter />
+      <section>
+        <NewsLetter />
+      </section>
 
-      <div className="footer_links">
+      <section className="footer_links">
         <div className="footer_NavLinks">
           {/* this could be component */}
           <h3>Quick Links</h3>
@@ -44,7 +46,7 @@ const Footer = () => {
           <p>Follow Us:</p>
           <SocialLinks />
         </div> */}
-      </div>
+      </section>
     </footer>
   );
 };

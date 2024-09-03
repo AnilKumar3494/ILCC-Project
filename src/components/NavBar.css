@@ -28,6 +28,7 @@
 .logo_container {
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 
 .navlinks {
@@ -72,6 +73,7 @@
 
   .logo {
     width: 150px; /* Adjusted size for smaller screens */
+    height: 20px;
   }
 
   .navlinks.open {

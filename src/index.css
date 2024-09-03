@@ -167,6 +167,18 @@ select {
 } */
 
 /* Applying Styles */
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+main > * {
+  border-bottom: 2px dotted dodgerblue;
+  padding-block: 0.5rem;
+}
+
 body {
   font-family: var(--ff-primary);
 

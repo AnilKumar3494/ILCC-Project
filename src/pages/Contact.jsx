@@ -10,18 +10,18 @@ import contactInfoData from "../data/contact-info-data.json";
 
 const Contact = () => {
   return (
-    <mainv>
-      <h2>This will be the Contact Page</h2>
+    <main>
+      <h1>Contact Us</h1>
 
       <section className="contact_members">
-        <h4>Our Dedicated Team</h4>
+        <h1>Dedicated Members of Our Community</h1>
         <ImageGallery contactInfoData={contactInfoData} />
       </section>
 
       <section className="contact_location_info">
         <LocationMap />
       </section>
-    </mainv>
+    </main>
   );
 };
 

@@ -49,16 +49,16 @@ const Home = () => {
       </section>
 
       <section className="sermons">
-        <div className="seromns_content heading_content">
-          <h4>SELECTED SERMONS</h4>
+        <div className="seromns_content">
+          <h1>SELECTED SERMONS</h1>
           <p>Our lives in the word of God</p>
         </div>
         <ImageGallery sermonsDataJSON={sermonsDataJSON} />
       </section>
 
       <section className="image_gallery">
-        <div className="seromns_content heading_content">
-          <h4>IMAGES COLLECTION</h4>
+        <div className="seromns_content">
+          <h1>IMAGES COLLECTION</h1>
           <p>Our lives in the word of God</p>
         </div>
 
