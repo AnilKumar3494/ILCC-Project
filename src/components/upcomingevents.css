@@ -1,0 +1,48 @@
+.carousel_container {
+  position: relative;
+  padding-bottom: 3rem; /* Space at the bottom to avoid overlap with buttons */
+}
+
+.carousel_item {
+  opacity: 0.9;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  margin-bottom: 1rem;
+  @media (max-width: 800px) {
+    opacity: 1;
+  }
+}
+
+.carousel_item:hover {
+  opacity: 1;
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.carousel_text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  /* text-align: center; */
+}
+
+.carousel_buttons {
+  position: absolute;
+  left: 50%; /* Center horizontally */
+  bottom: -0.3rem; /* Position the buttons near the bottom */
+  transform: translateX(-50%); /* Center horizontally using transform */
+  display: flex;
+  gap: 1rem; /* Space between buttons */
+}
+
+.arrow_buttons {
+  width: 5rem;
+  height: 2.5rem;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.2s, box-shadow 0.2s ease-in-out;
+}
+
+.arrow_buttons:hover {
+  background-color: #e0e0e0;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}

@@ -7,12 +7,14 @@ import Blog from "./pages/Blog";
 import Contact from "./pages/Contact";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+
 // import Header from "./components/Header";
 
 function App() {
   return (
     <main>
       <Header />
+
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
@@ -21,6 +23,7 @@ function App() {
         <Route path="/blog" element={<Blog />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
+
       <Footer />
     </main>
   );

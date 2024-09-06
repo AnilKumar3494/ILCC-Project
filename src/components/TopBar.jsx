@@ -6,7 +6,7 @@ import SocialLinks from "./SocialIcons";
 
 const TopBar = () => {
   return (
-    <div className="top_bar flex_row">
+    <section className="top_bar inline_padding">
       <div className="contact_details">
         <ContactDetails maxId={2} />
       </div>
@@ -14,7 +14,7 @@ const TopBar = () => {
       <div className="social_links">
         <SocialLinks />
       </div>
-    </div>
+    </section>
   );
 };
 

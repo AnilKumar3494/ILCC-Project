@@ -3,9 +3,9 @@ import "./NewsLetter.css";
 
 const NewsLetter = () => {
   return (
-    <section class="newsletter section_p1">
+    <section class="newsletter">
       <div class="content">
-        <h3>Sign Up for Our Newsletter</h3>
+        <h2>Sign Up for Our Newsletter</h2>
         <p>
           Join for event updates and uplifting
           <span> spiritual reflections.</span>
