@@ -15,6 +15,18 @@
   }
 }
 
+/* card styling */
+
+.card_content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.card_content h3 {
+  text-transform: uppercase;
+}
+
 .sermons_grid {
   /* border: 3px solid aqua; */
 
@@ -28,6 +40,7 @@
   }
 }
 
+/* Contact page */
 .members_grid {
   /* border: 3px solid mediumaquamarine; */
   display: grid;
@@ -37,14 +50,4 @@
   @media (max-width: 800px) {
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   }
-}
-
-.card_content {
-  display: flex;
-  flex-direction: column;
-  gap: 0.3rem;
-}
-
-.card_content h3 {
-  text-transform: uppercase;
 }

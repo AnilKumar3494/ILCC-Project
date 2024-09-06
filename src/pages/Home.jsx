@@ -12,6 +12,7 @@ import randomVerse from "../utils/getRandomVerse";
 import imagesDataJSON from "../data/images-data.json";
 
 import { localImages } from "../data/localImages";
+import UpcomingEvents from "../components/UpcomingEvents";
 
 const Home = () => {
   return (
@@ -56,10 +57,18 @@ const Home = () => {
         <ImageGallery sermonsDataJSON={sermonsDataJSON} />
       </section>
 
+      <section className="upcoming_events">
+        <div>
+          <h1>Upcoming Events</h1>
+          <p>Immerse Yourself in God's Presence</p>
+        </div>
+        <UpcomingEvents />
+      </section>
+
       <section className="image_gallery">
         <div className="seromns_content">
           <h1>IMAGES COLLECTION</h1>
-          <p>Our lives in the word of God</p>
+          <p>Sharing our faith and community stories</p>
         </div>
 
         <ImageGallery localImages={localImages} />
