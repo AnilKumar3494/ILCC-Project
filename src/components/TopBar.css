@@ -1,9 +1,15 @@
 .top_bar {
-  border-bottom: 2px solid black;
-  padding-block: var(--fs-200);
+  padding-block: var(--fs-600);
 
+  background-color: var(--primary-color);
+  margin-bottom: 0;
+}
+
+.contact_info {
   /* along with flex_row */
   display: flex;
+  align-items: center;
+  gap: var(--fs-100);
   justify-content: space-between;
 }
 
@@ -13,11 +19,13 @@
   align-items: center;
   gap: 1.5rem;
 }
+.random_quote {
+  text-align: center;
+}
 
-.contact_info {
-  display: flex;
-  align-items: center;
-  gap: var(--fs-100);
+.random_verse h4 {
+  font-family: "Lobster", cursive, sans-serif;
+  color: aliceblue;
 }
 
 @media (max-width: 800px) {

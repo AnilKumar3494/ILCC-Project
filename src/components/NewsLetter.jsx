@@ -5,7 +5,7 @@ const NewsLetter = () => {
   return (
     <section class="newsletter">
       <div class="content">
-        <h2>Sign Up for Our Newsletter</h2>
+        <h3>Sign Up for Our Newsletter</h3>
         <p>
           Join for event updates and uplifting
           <span> spiritual reflections.</span>

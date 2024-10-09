@@ -24,28 +24,15 @@ const Footer = () => {
       </section>
 
       <section className="footer_links">
-        <div className="footer_NavLinks">
-          {/* this could be component */}
-          <h3>Quick Links</h3>
-          {navLinks.navlinks.map((navLinkItems) => (
-            <li key={navLinkItems.id}>
-              <Link to={navLinkItems.path} title={navLinkItems.label}>
-                {`> ${navLinkItems.label}`}
-                {/* {navLinkItems.id !== lastID && ` |`} */}
-              </Link>
-            </li>
-          ))}
-        </div>
-
         <div className="footer_contactDetails">
           <h3>Contact Us</h3>
           <ContactDetails maxId={3} />
         </div>
 
-        {/* <div className="footer_socialLinks">
+        <div className="footer_socialLinks">
           <p>Follow Us:</p>
           <SocialLinks />
-        </div> */}
+        </div>
       </section>
     </footer>
   );

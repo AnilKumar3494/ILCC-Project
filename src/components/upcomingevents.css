@@ -6,6 +6,7 @@
 .carousel_item {
   opacity: 0.9;
   transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+
   margin-bottom: 1rem;
   @media (max-width: 800px) {
     opacity: 1;
