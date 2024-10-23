@@ -3,7 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { AiOutlineClose } from "react-icons/ai"; // Close icon for the hamburger menu
 
-import navLinks from "../data/dashboard-data.json";
+import navLinks from "../data/nav-links.json";
 
 import "./NavBar.css";
 

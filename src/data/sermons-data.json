@@ -1,0 +1,28 @@
+{
+  "sermons": [
+    {
+      "id": 1,
+      "imgSrc": "https://i0.wp.com/spiritandtruthpublishing.com/wp-content/uploads/2021/07/131985845_s.jpg?ssl=1",
+      "title": "Sermon Title Here",
+      "description": "Short Description goes here",
+      "categories": ["God", "Prayer"],
+      "date_time": "Date & Time Here"
+    },
+    {
+      "id": 2,
+      "imgSrc": "https://i0.wp.com/spiritandtruthpublishing.com/wp-content/uploads/2021/07/131985845_s.jpg?ssl=1",
+      "title": "Sermon Title here",
+      "description": "Short Description goes here",
+      "categories": ["Faith", "Belief"],
+      "date_time": "Date & Time Here"
+    },
+    {
+      "id": 3,
+      "imgSrc": "https://i0.wp.com/spiritandtruthpublishing.com/wp-content/uploads/2021/07/131985845_s.jpg?ssl=1",
+      "title": "Sermon Title here",
+      "description": "Short Description goes here",
+      "categories": ["Love", "Compassion"],
+      "date_time": "Date & Time Here"
+    }
+  ]
+}

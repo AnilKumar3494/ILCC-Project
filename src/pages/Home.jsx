@@ -4,14 +4,11 @@ import "./home.css";
 
 // components imports
 import ImageGallery from "../components/ImageGallery";
+import UpcomingEvents from "../components/UpcomingEvents";
 
 // data imports
-import dashboardData from "../data/dashboard-data.json";
-import sermonsDataJSON from "../data/dashboard-data.json";
-import randomVerse from "../utils/getRandomVerse";
-
-import { localImages } from "../data/localImages";
-import UpcomingEvents from "../components/UpcomingEvents";
+import sermonsData from "../data/sermons-data.json";
+// import masonaryImages from "../data/masonary-images.json";
 
 const Home = () => {
   return (
@@ -23,16 +20,6 @@ const Home = () => {
 
         <div className="dashboard_content_2">
           <div className="content_and_buttons">
-            {/* Getting About - Who We Are Content */}
-            {dashboardData.about
-              .filter((item) => item.title.toLowerCase() === "who we are")
-              .map((item) => (
-                <div key={item.id} className="who_we_are">
-                  <h3>{item.title}</h3>
-                  <p>{item.content}</p>
-                </div>
-              ))}
-
             <div className="button_container">
               <Link to={"/about"} className="button">
                 Know More
@@ -51,7 +38,7 @@ const Home = () => {
           <h2>SELECTED SERMONS</h2>
           <p>Our lives in the word of God</p>
         </div>
-        <ImageGallery sermonsDataJSON={sermonsDataJSON} />
+        <ImageGallery sermonsData={sermonsData} />
       </section>
 
       <section className="upcoming_events">
@@ -68,7 +55,7 @@ const Home = () => {
           <p>Sharing our faith and community stories</p>
         </div>
 
-        <ImageGallery localImages={localImages} />
+        {/* <ImageGallery masonaryImages={masonaryImages} /> */}
       </section>
     </main>
   );

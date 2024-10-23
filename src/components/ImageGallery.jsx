@@ -1,12 +1,12 @@
 import React from "react";
 import "./ImageGallery.css";
 
-const ImageGallery = ({ localImages, sermonsDataJSON, contactInfoData }) => {
-  if (sermonsDataJSON) {
+const ImageGallery = ({ sermonsData, masonaryImages, contactInfoData }) => {
+  if (sermonsData) {
     return (
       <div className="grid_container">
         <div className="sermons_grid">
-          {sermonsDataJSON.sermons.map((sermonsInfo) => (
+          {sermonsData.sermons.map((sermonsInfo) => (
             <div className="card" key={sermonsInfo.id}>
               <img
                 src={sermonsInfo.imgSrc}
@@ -26,25 +26,6 @@ const ImageGallery = ({ localImages, sermonsDataJSON, contactInfoData }) => {
     );
   }
 
-  if (localImages) {
-    return (
-      <div className="grid_container">
-        <div className={`local_imgs_container`}>
-          {localImages.map((imgInfo, index) => (
-            <img
-              key={index}
-              src={imgInfo.imgSrc}
-              alt={imgInfo.title}
-              className={`local_img ${
-                imgInfo.className ? imgInfo.className : ""
-              }`}
-            />
-          ))}
-        </div>
-      </div>
-    );
-  }
-
   if (contactInfoData) {
     return (
       <div className="grid_container">
@@ -57,7 +38,7 @@ const ImageGallery = ({ localImages, sermonsDataJSON, contactInfoData }) => {
                 className="card_img"
               />
               <div className="card_content">
-                <h3 className="card_title">{membersInfo.name}</h3>
+                <h4 className="card_title">{membersInfo.name}</h4>
                 <p className="card_price">{`${membersInfo.role}`}</p>
                 {/* <p className="card_description">Located in {membersInfo.city}</p> */}
               </div>

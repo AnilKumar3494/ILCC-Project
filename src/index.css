@@ -9,24 +9,11 @@
   --ff-secondary: Bungee, cursive;
   --ff-accent: Bungee Shade, cursive;
 
-  /* Palette 1: Warm and Inviting */
-  --primary-color: #bf5f00;
-  --secondary-color: #f5f5f5;
-  --accent-color: #6b8e23;
-  --text-color: #332200;
-  --background-color: #f8f8f8;
-  --link-color: #bf5f00;
-  --hover-link-color: #6b8e23;
-
   /* green christmaas */
   --primary-color: #307054;
-  --secondary-color: #a7c957;
-
-  --accent-color: #d4af37;
   --text-color: #333333;
+  --text-color-light: #444555;
   --background-color: #f8f8f8;
-  --link-color: #00468b;
-  --hover-link-color: #d4af37;
 
   /* Smaller Screens below 800 */
   --fs-100: 0.425rem;

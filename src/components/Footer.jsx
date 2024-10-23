@@ -6,8 +6,8 @@ import NewsLetter from "./NewsLetter";
 
 import SocialLinks from "./SocialIcons";
 import ContactDetails from "./ContactDetails";
-import randomVerse from "../utils/getRandomVerse";
-import navLinks from "../data/dashboard-data.json";
+import navLinks from "../data/nav-links.json";
+import RandomVerse from "./RandomVerse";
 
 const Footer = () => {
   const lastID = navLinks.navlinks[navLinks.navlinks.length - 1].id;
@@ -16,7 +16,7 @@ const Footer = () => {
     <footer className="footer">
       <section className="logo_container">
         <img src={navLinks.navlinks[2]} alt="ILCC" className="logo" />
-        <p>{`"${randomVerse.text}" ~ ${randomVerse.reference}`}</p>
+        <RandomVerse />
       </section>
 
       <section>
@@ -31,7 +31,7 @@ const Footer = () => {
 
         <div className="footer_socialLinks">
           <p>Follow Us:</p>
-          <SocialLinks />
+          {/* <SocialLinks /> */}
         </div>
       </section>
     </footer>

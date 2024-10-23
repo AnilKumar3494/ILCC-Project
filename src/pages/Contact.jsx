@@ -5,16 +5,15 @@ import "./contact.css";
 import LocationMap from "../components/LocationMap";
 import ImageGallery from "../components/ImageGallery";
 
-//data imports
 import contactInfoData from "../data/contact-info-data.json";
 
 const Contact = () => {
   return (
     <main>
-      <h1>Contact Us</h1>
+      <h2>Contact Us</h2>
 
       <section className="contact_members">
-        <h1>Dedicated Members of Our Community</h1>
+        <h3>Dedicated Members of Our Community</h3>
         <ImageGallery contactInfoData={contactInfoData} />
       </section>
 

@@ -2,8 +2,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { faFacebookF, faInstagram } from "@fortawesome/free-brands-svg-icons";
 
-import "./TopBar.css";
-
 import socialLinksData from "../data/contact-info-data.json";
 
 const SocialLinks = () => {

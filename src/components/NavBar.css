@@ -5,7 +5,7 @@
   align-items: center;
   justify-content: space-between; /* Space between for large screens */
   height: 6dvh;
-  background-color: var(--secondary-color);
+  background-color: var(--primary-color);
 
   position: sticky;
   top: 0;
@@ -40,6 +40,7 @@
 
 .active {
   font-weight: bolder;
+  color: var(--accent-color);
 }
 
 .nav_item {

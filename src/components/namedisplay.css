@@ -1,0 +1,18 @@
+.name_display {
+  text-align: left;
+  /* border: 2px solid black; */
+
+  background: url(../assets/images/cross-banner.jpg);
+  background-size: cover;
+  background-position: 20%;
+  background-repeat: no-repeat;
+}
+.name_display h1 {
+  color: black !important;
+  font-weight: bold;
+}
+
+.name_display span {
+  color: var(--text-color-light);
+  font-style: italic;
+}
