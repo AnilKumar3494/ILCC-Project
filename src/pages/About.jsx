@@ -1,8 +1,8 @@
 import React from "react";
-import dashboardData from "../data/dashboard-data.json";
 
 import "./about.css";
 import SocialMediaIntegration from "../components/SocialMediaIntegration";
+import aboutData from "../data/aboutdata.json";
 
 const About = () => (
   <>
@@ -16,7 +16,7 @@ const About = () => (
         </div>
       </picture>
       <section>
-        {dashboardData.about.map((data) => (
+        {aboutData.about.map((data) => (
           <div key={data.id} className="aboutus container flex_row">
             <div className="aboutus_images">
               <img src="" alt={`${data.title} Image`} />

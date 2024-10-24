@@ -5,7 +5,7 @@
   align-items: center;
 
   /* background-image: url(banner.png); */
-  background: lightblue;
+  background: var(--secondary-color);
   background-position: center;
   background-size: cover;
   min-height: 25dvh;
@@ -20,6 +20,10 @@
   }
 }
 
+.newsletter .content h3 {
+  color: #fff;
+  font-size: 3.5rem;
+}
 .newsletter .content p {
   color: #022725;
 }
@@ -35,10 +39,11 @@
 }
 
 .newsletter .email input {
-  width: 16rem;
+  min-width: 18rem;
   font-size: var(--fs-500);
   outline: none;
   border: none;
+  border-radius: 0.5rem;
   background-color: #fff;
 
   padding-block: var(--padding-btn);

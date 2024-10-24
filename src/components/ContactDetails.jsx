@@ -7,8 +7,6 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import contactInfoData from "../data/contact-info-data.json";
 
-import "./TopBar.css";
-
 const iconMappings = {
   faEnvelope: faEnvelope,
   faPhoneAlt: faPhoneAlt,

@@ -1,9 +1,9 @@
-import webApplicationData from '../data/dashboard-data.json'
+import versesData from '../data/verses-data.json'
 
 //verses - getting random verse
 const getRandomVerse = () => {
-    const randomIndex = Math.floor(Math.random() * webApplicationData.verses.length);
-    return webApplicationData.verses[randomIndex];
+    const randomIndex = Math.floor(Math.random() * versesData.length);
+    return versesData[randomIndex];
 };
 
 const randomVerse = getRandomVerse();
