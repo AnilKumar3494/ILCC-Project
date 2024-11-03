@@ -3,6 +3,7 @@ import React from "react";
 import "./about.css";
 import SocialMediaIntegration from "../components/SocialMediaIntegration";
 import aboutData from "../data/aboutdata.json";
+import HistoryTimeLine from "@/components/HistoryTimeLine";
 
 const About = () => (
   <>
@@ -15,6 +16,9 @@ const About = () => (
           <p>Indian Latin Catholic Church - ILCC</p>
         </div>
       </picture>
+      <section>
+        <HistoryTimeLine />
+      </section>
       <section>
         {aboutData.about.map((data) => (
           <div key={data.id} className="aboutus container flex_row">

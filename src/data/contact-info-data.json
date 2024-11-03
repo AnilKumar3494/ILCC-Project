@@ -1,10 +1,16 @@
 {
   "committeeMembers": [
     {
-      "id": 1,
+      "id": "Fr1",
       "name": "Fr. Lenin Fernades",
       "role": "President",
-      "imgSrc": "https://drive.google.com/file/d/1KaHFlXpXGfvq0_6nPkOkDrwbVifaOL-t/preview"
+      "imgSrc": "https://raw.githubusercontent.com/AnilKumar3494/ILCC-images/refs/heads/main/church-members/Fr-Lenin.jpeg"
+    },
+    {
+      "id": "Fr2",
+      "name": "Fr. Mike Davis",
+      "role": "Father",
+      "imgSrc": "https://github.com/AnilKumar3494/ILCC-images/blob/main/church-members/Fr%20Mike%20Davis.jpeg?raw=true"
     },
     {
       "id": 2,

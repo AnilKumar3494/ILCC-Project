@@ -1,9 +1,8 @@
+/* Main grid container */
 .grid_container {
   --aspect-ratio-1: 1;
   --aspect-ratio-variable: 1.1;
-
   --grid-gap: 1.1rem;
-
   --border-radius: 0.5rem;
 
   max-width: 120rem;
@@ -15,8 +14,7 @@
   }
 }
 
-/* card styling */
-
+/* Card styling */
 .card_content {
   display: flex;
   flex-direction: column;
@@ -27,50 +25,96 @@
   text-transform: uppercase;
 }
 
+/* Sermons grid (general purpose grid styling, if needed) */
 .sermons_grid {
-  /* border: 3px solid aqua; */
-
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
   gap: 0.6rem;
 
   @media (max-width: 800px) {
-    /* border: 20px solid saddlebrown; */
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     gap: 1.3rem;
   }
 }
+
 .sermons_grid .card {
   background-color: var(--secondary-color);
-  background-color: #a7c957;
-
-  border-top-left-radius: 0.5rem;
-  border-top-right-radius: 0.5em;
-  border-bottom-left-radius: 0.5rem;
-  border-bottom-right-radius: 0.5em;
-
+  border-radius: var(--border-radius);
   transition: all 0.3s ease-in-out, transform 0.3s ease-in-out;
-
   box-shadow: rgba(99, 99, 99, 0.8) 0px 2px 8px 0px;
 }
+
 .sermons_grid .card:hover {
   transform: scale(1.1);
 }
 
 .sermons_grid img {
-  /* border: 5px solid maroon; */
-  border-top-left-radius: 0.5rem;
-  border-top-right-radius: 0.5em;
+  border-top-left-radius: var(--border-radius);
+  border-top-right-radius: var(--border-radius);
 }
 
-/* Contact page */
+/* Contact page specific styling */
 .members_grid {
   /* border: 3px solid mediumaquamarine; */
   display: grid;
-  gap: 0.3rem;
+  gap: var(--grid-gap);
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
 
   @media (max-width: 800px) {
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  }
+}
+
+.members_grid .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--secondary-color);
+  /* border: 3px solid maroon; */
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  box-shadow: rgba(99, 99, 99, 0.8) 0px 2px 8px 0px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.members_grid .card:hover {
+  transform: scale(1.05);
+}
+
+.members_grid img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1; /* Keeps images square */
+  object-fit: cover; /* Ensures images fit within the designated area */
+  border-top-left-radius: var(--border-radius);
+  border-top-right-radius: var(--border-radius);
+}
+
+.card_content {
+  padding: 1rem;
+  text-align: center;
+}
+
+.card_content h4 {
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.card_content p {
+  margin: 0;
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #666;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .card_content h4 {
+    font-size: 1rem;
+  }
+
+  .card_content p {
+    font-size: 0.85rem;
   }
 }

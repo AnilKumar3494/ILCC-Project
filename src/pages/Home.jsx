@@ -14,10 +14,6 @@ const Home = () => {
   return (
     <main>
       <section className="dashboard bg_img ">
-        <div className="dashboard_content_1">
-          <h1>Indian Latin Cathaloic Church</h1>
-        </div>
-
         <div className="dashboard_content_2">
           <div className="content_and_buttons">
             <div className="button_container">
@@ -34,14 +30,14 @@ const Home = () => {
       </section>
 
       <section className="sermons">
-        <div className="seromns_content">
-          <h2>SELECTED SERMONS</h2>
+        <div className="seromns_content" id="sermons">
+          <h2>Picked Sermons</h2>
           <p>Our lives in the word of God</p>
         </div>
         <ImageGallery sermonsData={sermonsData} />
       </section>
 
-      <section className="upcoming_events">
+      <section className="upcoming_events" id="events">
         <div>
           <h2>Upcoming Events</h2>
           <p>Immerse Yourself in God's Presence</p>
