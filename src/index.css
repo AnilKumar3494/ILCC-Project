@@ -22,14 +22,14 @@
   --text-color-light: #444555;
 
   /* Brown and red */
-  /* --primary-color: #46211a;
+  --primary-color: #46211a;
   --background-color: #f1d3b2;
   --top-bar: #46211a;
   --top-bar-text: #f1d3b2;
   --nav-bar: #a43820;
   --nav-bar-text: #f1d3b2;
   --text-color: #333333;
-  --text-color-light: #444555; */
+  --text-color-light: #444555;
 
   /* Smaller Screens below 800 */
   --fs-100: 0.425rem;

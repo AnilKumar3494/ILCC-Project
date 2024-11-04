@@ -8,14 +8,19 @@ import HistoryTimeLine from "@/components/HistoryTimeLine";
 const About = () => (
   <>
     <main>
-      <picture>
-        {/* image with text postioned absolutely / vice verse */}
-        <img src="" alt="Banner Image Will Come" />
-        <div>
-          <h2>About Us</h2>
-          <p>Indian Latin Catholic Church - ILCC</p>
+      <section>
+        <picture>
+          {/* image with text postioned absolutely / vice verse */}
+          <img src="" alt="Banner Image Will Come" />
+        </picture>
+
+        <div className="banner_content">
+          <h2>ABOUT US</h2>
+
+          <p>can put a random verse here</p>
         </div>
-      </picture>
+      </section>
+
       <section>
         <HistoryTimeLine />
       </section>
