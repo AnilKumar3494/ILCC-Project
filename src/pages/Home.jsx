@@ -17,11 +17,11 @@ const Home = () => {
         <div className="dashboard_content_2">
           <div className="content_and_buttons">
             <div className="button_container">
-              <Link to={"/about"} className="button">
+              <Link to={"/about"} className="button" title="Know More">
                 Know More
               </Link>
 
-              <Link to={"/contact"} className="button">
+              <Link to={"/contact"} className="button" title="Contact Us">
                 Contact Us
               </Link>
             </div>
@@ -32,7 +32,7 @@ const Home = () => {
       <section className="sermons">
         <div className="seromns_content" id="sermons">
           <h2>Picked Sermons</h2>
-          <p>Our lives in the word of God</p>
+          <h4>Our lives in the word of God</h4>
         </div>
         <ImageGallery sermonsData={sermonsData} />
       </section>
@@ -40,7 +40,7 @@ const Home = () => {
       <section className="upcoming_events" id="events">
         <div>
           <h2>Upcoming Events</h2>
-          <p>Immerse Yourself in God's Presence</p>
+          <h4>Immerse Yourself in God's Presence</h4>
         </div>
         <UpcomingEvents />
       </section>
@@ -48,7 +48,7 @@ const Home = () => {
       <section className="image_gallery">
         <div className="seromns_content">
           <h2>IMAGES COLLECTION</h2>
-          <p>Sharing our faith and community stories</p>
+          <h4>Sharing our faith and community stories</h4>
         </div>
 
         {/* <ImageGallery masonaryImages={masonaryImages} /> */}

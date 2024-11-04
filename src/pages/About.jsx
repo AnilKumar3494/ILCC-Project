@@ -4,6 +4,7 @@ import "./about.css";
 import SocialMediaIntegration from "../components/SocialMediaIntegration";
 import aboutData from "../data/aboutdata.json";
 import HistoryTimeLine from "@/components/HistoryTimeLine";
+import RandomVerse from "@/components/RandomVerse";
 
 const About = () => (
   <>
@@ -16,8 +17,7 @@ const About = () => (
 
         <div className="banner_content">
           <h2>ABOUT US</h2>
-
-          <p>can put a random verse here</p>
+          <RandomVerse />
         </div>
       </section>
 
