@@ -6,6 +6,17 @@
       "label": "Home"
     },
     {
+      "id": "S",
+      "path": "#sermons",
+      "label": "Sermons"
+    },
+
+    {
+      "id": "E",
+      "path": "#events",
+      "label": "Events"
+    },
+    {
       "id": 2,
       "path": "/about",
       "label": "About"

@@ -1,8 +1,62 @@
-timeline type
-
-latest on top,
-
-title, date, short desc, (image optional)
-
-|
-|
+[
+  {
+    "id": "1",
+    "title": "Early Years",
+    "date": "Pre-2000",
+    "shortDesc": "The families that would eventually form the Indian Latin Catholic Community were initially part of the Indian Catholic Association, including members from the Latin, Syro-Malabar, and Syro-Malankara rites. The Archdiocese of Philadelphia presided over this organization, appointing priests to support the community's growth and meet the liturgical needs of each rite."
+  },
+  {
+    "id": "2",
+    "title": "Formation of the Latin Catholic Community",
+    "date": "Pre-2000",
+    "shortDesc": "Latin Catholic families pursued creating a community to celebrate Mass in the Latin liturgy. Under Fr. Raju B. Pilla’s guidance, families gathered for prayer meetings and Eucharistic celebrations in homes, primarily with members from Kerala, and some from Tamil Nadu and Goa."
+  },
+  {
+    "id": "3",
+    "title": "Milestone: St. Elizabeth Ann Seton Church",
+    "date": "Pre-2000",
+    "shortDesc": "With Cardinal Anthony Bevilacqua’s blessing, and guidance from Rev. Fr. Tom Betz and Rev. Fr. Michael Lonergan, the community began regular services at St. Elizabeth Ann Seton in Bensalem."
+  },
+  {
+    "id": "4",
+    "title": "Formal Approval and Inauguration",
+    "date": "2000-07-16",
+    "shortDesc": "Fr. Raju B. Pilla received formal approval to establish the congregation in a parish structure. The Indian Latin Catholic Community was officially inaugurated at St. Elizabeth Ann Seton, Bensalem, with a Eucharistic celebration presided over by Most Rev. Dr. M. Soosa Pakiam."
+  },
+  {
+    "id": "5",
+    "title": "Participation in First International Convention",
+    "date": "2002",
+    "shortDesc": "The community participated in the First International Convention in Chicago, marking their presence and contributions to the global Indian Latin Catholic Community."
+  },
+  {
+    "id": "6",
+    "title": "Participation in Fourth International Convention",
+    "date": "2007",
+    "shortDesc": "The community joined the Fourth International Convention held in New York, continuing their involvement in global gatherings."
+  },
+  {
+    "id": "7",
+    "title": "Establishment of Basic Ecclesial Communities",
+    "date": "2008",
+    "shortDesc": "Since 2008, the community has been organized into three Basic Ecclesial Communities based on geographic locations, fostering prayer, Bible study, and communal support, enhancing Eucharistic life through compassion and sharing."
+  },
+  {
+    "id": "8",
+    "title": "Hosting the 5th International Kerala Latin Catholic Convention",
+    "date": "2008",
+    "shortDesc": "The community hosted the fifth International Kerala Latin Catholic Convention, celebrating heritage and unity of Indian Latin Catholics in the U.S."
+  },
+  {
+    "id": "9",
+    "title": "Participation in Sixth International Convention",
+    "date": "2011",
+    "shortDesc": "The community participated in the Sixth International Convention held in New York."
+  },
+  {
+    "id": "10",
+    "title": "Shared Community with Assumption BVM Parish",
+    "date": "2016",
+    "shortDesc": "Since 2016, the Indian Latin Catholic Community has been a shared community with Assumption BVM Parish in Feasterville."
+  }
+]

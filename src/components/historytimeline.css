@@ -1,0 +1,92 @@
+/* Base container for the timeline */
+.history-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+
+  /* border: 4px solid blue; */
+}
+
+/* The vertical line */
+.timeline-line {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 2px; /* Narrower line */
+  height: 100%;
+  background-color: var(--nav-bar);
+}
+
+/* Container for each timeline item */
+.timeline-item {
+  /* border: 3px solid lime; */
+
+  --translate-x: 51.2%;
+
+  display: flex;
+  flex-direction: column;
+
+  position: relative;
+  max-width: 45%; /* Adjusted width */
+
+  padding: 0.4rem 0rem;
+  margin-bottom: 1rem;
+
+  border-radius: 8px;
+  background-color: var(--background-color);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+
+  transition: all 0.3s ease-in-out;
+}
+
+.timeline-item:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+}
+.timeline-item.left {
+  text-align: left;
+  align-items: flex-end;
+  transform: translateX(calc(-1 * var(--translate-x))); /* Reduced from -100% */
+
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.timeline-item.right {
+  text-align: left;
+  align-items: flex-start;
+  transform: translateX(var(--translate-x)); /* Reduced from 100% */
+
+  padding-left: 1rem;
+}
+
+.timeline-item::before {
+  --dot-postion: -10px;
+  --dot-size: 1.3rem;
+
+  content: "";
+  position: absolute;
+  top: 10px;
+  width: var(--dot-size);
+  height: var(--dot-size);
+  border: 2px solid var(--nav-bar);
+  border-radius: 50%;
+}
+
+.timeline-item.left::before {
+  right: var(--dot-postion);
+}
+
+.timeline-item.right::before {
+  left: var(--dot-postion);
+}
+
+/* Text styling */
+.timeline-item h3 {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.timeline-item p {
+  margin: 5px 0;
+}

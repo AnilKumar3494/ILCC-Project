@@ -24,7 +24,7 @@ main > section {
 .dashboard.bg_img::after {
   content: "";
   position: absolute;
-  background-color: rgba(2, 2, 2, 0.6);
+  background-color: rgba(2, 2, 2, 0.2);
   inset: 0;
 
   /* z-index: -1; */
