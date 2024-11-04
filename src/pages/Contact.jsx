@@ -10,10 +10,9 @@ import contactInfoData from "../data/contact-info-data.json";
 const Contact = () => {
   return (
     <main>
-      <h2>Contact Us</h2>
-
       <section className="contact_members">
-        <h3>Dedicated Members of Our Community</h3>
+        <h2>Contact Us</h2>
+        <h4>Dedicated Members of Our Community</h4>
         <ImageGallery contactInfoData={contactInfoData} />
       </section>
 

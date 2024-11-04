@@ -13,28 +13,30 @@ const Footer = () => {
   const lastID = navLinks.navlinks[navLinks.navlinks.length - 1].id;
 
   return (
-    <footer className="footer">
-      <section className="logo_container">
-        <img src={navLinks.navlinks[2]} alt="ILCC" className="logo" />
-        <RandomVerse />
-      </section>
+    <main>
+      <footer className="footer">
+        <section className="logo_container">
+          <img src={navLinks.navlinks[2]} alt="ILCC" className="logo" />
+          <RandomVerse />
+        </section>
 
-      <section>
-        <NewsLetter />
-      </section>
+        <section>
+          <NewsLetter />
+        </section>
 
-      <section className="footer_links">
-        <div className="footer_contactDetails">
-          <h3>Contact Us</h3>
-          <ContactDetails maxId={3} />
-        </div>
+        <section className="footer_links">
+          <div className="footer_contactDetails">
+            <h3>Contact Us</h3>
+            <ContactDetails maxId={3} />
+          </div>
 
-        <div className="footer_socialLinks">
-          <p>Follow Us:</p>
-          {/* <SocialLinks /> */}
-        </div>
-      </section>
-    </footer>
+          <div className="footer_socialLinks">
+            <p>Follow Us:</p>
+            {/* <SocialLinks /> */}
+          </div>
+        </section>
+      </footer>
+    </main>
   );
 };
 

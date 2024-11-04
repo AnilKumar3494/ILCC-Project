@@ -71,6 +71,12 @@
   height: var(--dot-size);
   border: 2px solid var(--nav-bar);
   border-radius: 50%;
+
+  transition: all 0.3s ease-in-out;
+}
+
+.timeline-item:hover::before {
+  background-color: var(--nav-bar);
 }
 
 .timeline-item.left::before {
