@@ -4,6 +4,9 @@
   color: var(--top-bar-text);
   font-family: var(--ff-poppins);
   padding-block: 1rem;
+
+  /* border: 2px solid maroon; */
+  height: 15dvh;
 }
 .name_display h2 {
   font-weight: bold;

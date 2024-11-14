@@ -6,20 +6,20 @@
       "label": "Home"
     },
     {
-      "id": "S",
-      "path": "#sermons",
-      "label": "Sermons"
+      "id": 2,
+      "path": "/about",
+      "label": "About"
+    },
+    {
+      "id": "H",
+      "path": "/about",
+      "label": "History"
     },
 
     {
       "id": "E",
       "path": "#events",
       "label": "Events"
-    },
-    {
-      "id": 2,
-      "path": "/about",
-      "label": "About"
     },
 
     {

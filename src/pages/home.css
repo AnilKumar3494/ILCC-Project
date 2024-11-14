@@ -3,8 +3,7 @@ main > section {
   margin-bottom: 2rem;
 }
 .dashboard {
-  color: white;
-  height: 85dvh;
+  height: 80dvh;
 
   display: grid;
   place-items: center;
@@ -16,7 +15,7 @@ main > section {
 .dashboard.bg_img {
   background: url(../assets/images/church-main.jpg);
   background-size: cover;
-  background-position: center calc(10%);
+  background-position: center calc(30%);
   background-repeat: no-repeat;
 
   position: relative;
@@ -74,6 +73,12 @@ main > section {
   margin-inline: auto;
 
   gap: 1rem;
+}
+
+.sermons {
+  height: 100dvh;
+  /* border: 2px solid magenta; */
+  padding-top: 6rem;
 }
 
 .seromns_content {

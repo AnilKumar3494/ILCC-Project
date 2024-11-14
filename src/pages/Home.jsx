@@ -17,8 +17,8 @@ const Home = () => {
         <div className="dashboard_content_2">
           <div className="content_and_buttons">
             <div className="button_container">
-              <Link to={"/about"} className="button" title="Know More">
-                Know More
+              <Link to={"/about"} className="button" title="About Us">
+                About Us
               </Link>
 
               <Link to={"/contact"} className="button" title="Contact Us">
@@ -29,8 +29,8 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="sermons">
-        <div className="seromns_content" id="sermons">
+      <section className="sermons" id="sermons">
+        <div className="seromns_content">
           <h2>Picked Sermons</h2>
           <h4>Our lives in the word of God</h4>
         </div>

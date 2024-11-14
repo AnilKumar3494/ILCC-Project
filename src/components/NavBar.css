@@ -4,7 +4,7 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  height: 6dvh;
+  height: 5dvh;
   background-color: var(--nav-bar);
 
   position: sticky;

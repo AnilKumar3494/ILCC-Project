@@ -1,9 +1,12 @@
 import React, { useState, useEffect } from "react";
 
 function ThemeSwitcher() {
-  const [isChristmasGreen, setIsChristmasGreen] = useState(true);
+  //   const [isChristmasGreen, setIsChristmasGreen] = useState(true);
+  const [isChristmasGreen, setIsChristmasGreen] = useState(
+    () => JSON.parse(localStorage.getItem("isChristmasGreen")) ?? true
+  );
 
-  // Apply the selected theme
+  // Apply the selected theme and save to localStorage
   useEffect(() => {
     if (isChristmasGreen) {
       document.documentElement.style.setProperty("--primary-color", "#307054");
@@ -36,6 +39,9 @@ function ThemeSwitcher() {
         "#444555"
       );
     }
+
+    // Save theme choice to localStorage
+    localStorage.setItem("isChristmasGreen", JSON.stringify(isChristmasGreen));
   }, [isChristmasGreen]);
 
   // Toggle theme function
@@ -52,7 +58,6 @@ function ThemeSwitcher() {
         position: "fixed",
         bottom: "20px",
         right: "20px",
-
         backgroundColor: "var(--primary-color)",
         color: "var(--nav-bar-text)",
         border: "none",
