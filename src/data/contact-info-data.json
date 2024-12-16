@@ -13,10 +13,28 @@
       "imgSrc": "https://github.com/AnilKumar3494/ILCC-images/blob/main/church-members/Fr%20Mike%20Davis.jpeg?raw=true"
     },
     {
+      "id": "Fr3",
+      "name": "Fr. Raju Pillai",
+      "role": "Founder & Father",
+      "imgSrc": "https://github.com/AnilKumar3494/ILCC-images/blob/main/church-members/FrRajuPillai-Founder.jpg?raw=true"
+    },
+    {
+      "id": "Founder",
+      "name": "Lucy Das",
+      "role": "Founder",
+      "imgSrc": "https://github.com/AnilKumar3494/ILCC-images/blob/main/church-members/Lucy%20Das%20-%20Founder.JPG?raw=true"
+    },
+    {
       "id": 2,
       "name": "Nevin Das",
       "role": "Secretary",
-      "imgSrc": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
+      "imgSrc": "https://github.com/AnilKumar3494/ILCC-images/blob/main/church-members/Nevin-Secretary.JPEG?raw=true"
+    },
+    {
+      "id": "Aduitor",
+      "name": "Raju",
+      "role": "Aduitor",
+      "imgSrc": "https://github.com/AnilKumar3494/ILCC-images/blob/main/church-members/Raju%20-%20Auditor.jpg?raw=true"
     },
     {
       "id": 3,

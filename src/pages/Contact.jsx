@@ -2,22 +2,17 @@ import React from "react";
 import "./contact.css";
 
 // components imports
-import LocationMap from "../components/LocationMap";
-import ImageGallery from "../components/ImageGallery";
-
-import contactInfoData from "../data/contact-info-data.json";
+import SocialMediaIntegration from "@/components/SocialMediaIntegration";
 
 const Contact = () => {
   return (
     <main>
       <section className="contact_members">
-        <h2>Contact Us</h2>
-        <h4>Dedicated Members of Our Community</h4>
-        <ImageGallery contactInfoData={contactInfoData} />
+        <h2>Connect With Us</h2>
       </section>
 
-      <section className="contact_location_info">
-        <LocationMap />
+      <section>
+        <SocialMediaIntegration />
       </section>
     </main>
   );

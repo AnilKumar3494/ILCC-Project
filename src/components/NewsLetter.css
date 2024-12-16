@@ -22,7 +22,7 @@
 
 .newsletter .content h3 {
   color: #fff;
-  font-size: 3.5rem;
+  font-size: var(--fs-namedisplay);
 }
 .newsletter .content p {
   color: #022725;

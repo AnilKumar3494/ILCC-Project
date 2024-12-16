@@ -1,8 +1,6 @@
 /* Main grid container */
 .grid_container {
-  --aspect-ratio-1: 1;
-  --aspect-ratio-variable: 1.1;
-  --grid-gap: 1.1rem;
+  --grid-gap: 2rem;
   --border-radius: 0.5rem;
 
   max-width: 120rem;
@@ -53,12 +51,11 @@
   border-top-right-radius: var(--border-radius);
 }
 
-/* Contact page specific styling */
+/* Members Card Styling */
 .members_grid {
-  /* border: 3px solid mediumaquamarine; */
   display: grid;
   gap: var(--grid-gap);
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
 
   @media (max-width: 800px) {
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -71,7 +68,7 @@
   align-items: center;
   background-color: var(--secondary-color);
   /* border: 3px solid maroon; */
-  border-radius: var(--border-radius);
+  border-radius: 2rem;
   overflow: hidden;
   box-shadow: rgba(99, 99, 99, 0.8) 0px 2px 8px 0px;
   transition: transform 0.3s ease-in-out;
@@ -83,9 +80,9 @@
 
 .members_grid img {
   width: 100%;
-  height: auto;
-  aspect-ratio: 1; /* Keeps images square */
-  object-fit: cover; /* Ensures images fit within the designated area */
+  aspect-ratio: 12 / 16; /* Keeps images square */
+  object-fit: cover;
+  object-position: center;
   border-top-left-radius: var(--border-radius);
   border-top-right-radius: var(--border-radius);
 }

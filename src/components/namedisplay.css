@@ -6,14 +6,14 @@
   padding-block: 1rem;
 
   /* border: 2px solid maroon; */
-  height: 15dvh;
+  max-height: 18dvh;
 }
-.name_display h2 {
+.name_display h1 {
   font-weight: bold;
   font-family: var(--ff-poppins);
+  font-size: var(--fs-namedisplay);
   color: var(--top-bar-text);
   text-transform: uppercase;
-  font-size: 3rem;
   letter-spacing: 1.4px;
 }
 
