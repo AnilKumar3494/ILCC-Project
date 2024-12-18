@@ -5,7 +5,7 @@
 
 .about_banner_img {
   width: 100%;
-  max-height: 50vh;
+  max-height: 55vh;
   object-fit: cover;
   object-position: center top;
   border-radius: 0 0 var(--border-radius) var(--border-radius);
@@ -33,6 +33,84 @@
 
   box-shadow: 0px 2px 4px rgb(45 35 66 / 40%),
     0px 7px 13px -3px rgba(32, 25, 46, 0.3);
+}
+
+/* test */
+/* General grid container */
+.two_two_grid {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  justify-content: space-between;
+  /* margin-bottom: 2rem; */
+}
+
+/* Text Styling */
+.two_two_grid .text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 1rem;
+}
+
+/* Image Container */
+.two_two_grid picture {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.two_two_grid img {
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .two_two_grid {
+    flex-direction: column !important; /* Stack text and image vertically */
+    gap: 1rem;
+  }
+
+  .two_two_grid .text h3 {
+    font-size: 1.5rem;
+  }
+
+  .two_two_grid .text p {
+    font-size: 0.9rem;
+  }
+
+  .two_two_grid img {
+    max-height: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .two_two_grid .text h3 {
+    font-size: 1.25rem;
+  }
+
+  .two_two_grid .text p {
+    font-size: 0.8rem;
+  }
+}
+
+.accordian {
+  /* border: 3px solid green; */
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2rem;
+  background-color: #fdf9f3;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .grid_container {

@@ -4,10 +4,8 @@ import "./accordian.css";
 import aboutUsContent from "../../data/about-us-content.json";
 
 const Accordian = () => {
-  // State to track open/close status for each sub-section
   const [openIndexes, setOpenIndexes] = useState([]);
 
-  // Toggle function to show/hide accordion content
   const toggleAccordion = (index) => {
     setOpenIndexes((prev) =>
       prev.includes(index) ? prev.filter((i) => i !== index) : [...prev, index]
@@ -15,9 +13,9 @@ const Accordian = () => {
   };
 
   return (
-    <div className="accordian">
+    <div className="accordian_jsx">
       {aboutUsContent.sections.map((section, index) => (
-        <div key={index} className="section">
+        <div key={index} className="accordian_container">
           {section.subSections &&
             section.subSections.map((subSection, subIndex) => {
               const isOpen = openIndexes.includes(`${index}-${subIndex}`);
@@ -27,7 +25,6 @@ const Accordian = () => {
                   <div
                     className="accordian_title"
                     onClick={() => toggleAccordion(`${index}-${subIndex}`)}
-                    style={{ cursor: "pointer" }}
                   >
                     <h3>{subSection.title}</h3>
                     <button>{isOpen ? "−" : "+"}</button>
@@ -39,7 +36,7 @@ const Accordian = () => {
                       <ul>
                         {subSection.list &&
                           subSection.list.map((listItem, listIndex) => (
-                            <li key={listIndex}>{`# ${listItem}`}</li>
+                            <li key={listIndex}>{`${listItem}`}</li>
                           ))}
                       </ul>
                     )}

@@ -30,10 +30,29 @@ const About = () => {
           <div className="aboutus_content_container">
             {aboutUsContent.sections.map((section, index) => (
               <article key={index} className="aboutus_content">
-                <h3>{section.title.toUpperCase()}</h3>
-                {section.description && <p>{section.description}</p>}
-
-                {section.subSections && <Accordian />}
+                {index <= 1 ? (
+                  <div
+                    className={`two_two_grid ${
+                      index % 2 === 0 ? "flex-row" : "flex-row-reverse"
+                    }`}
+                  >
+                    <div className="text">
+                      <h3>{section.title.toUpperCase()}</h3>
+                      {section.description && <p>{section.description}</p>}
+                    </div>
+                    <picture>
+                      <img
+                        src={section.imgSrc}
+                        alt={`img:${index + 1} - ${section.title}`}
+                      />
+                    </picture>
+                  </div>
+                ) : (
+                  <div className="accordian">
+                    <h3>{section.title.toUpperCase()}</h3>
+                    {section.subSections && <Accordian />}
+                  </div>
+                )}
               </article>
             ))}
           </div>

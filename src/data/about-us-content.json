@@ -2,10 +2,12 @@
   "sections": [
     {
       "title": "Who We Are",
+      "imgSrc": "https://github.com/AnilKumar3494/ILCC-images/blob/main/aboutus-images/who_we_are.jpg?raw=true",
       "description": "We are Catholics rooted in Jesus Christ, nourished by the grace of the sacraments, and live as the body of Christ, spreading the message of the Gospel of Jesus Christ to those around us."
     },
     {
       "title": "Who Can be Members of ILCC",
+      "imgSrc": "https://github.com/AnilKumar3494/ILCC-images/blob/main/aboutus-images/infographic_whoweare.jpg?raw=true",
       "description": "All Latin Catholics of India can be members of ILCC. We also extend our welcome to anyone who is baptized Catholic or would like to explore the Catholic faith. While we are rooted in our identity as an ethnic Indian community, we deeply value and cherish the presence of everyone who chooses to join us."
     },
     {
