@@ -1,13 +1,15 @@
 .carousel_container {
   position: relative;
-  padding-bottom: 3rem; /* Space at the bottom to avoid overlap with buttons */
+
+  padding-bottom: 2rem;
 }
 
 .carousel_item {
   opacity: 0.9;
+  /* border: 4px solid maroon; */
   transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  padding-bottom: 0.5rem;
 
-  margin-bottom: 1rem;
   @media (max-width: 800px) {
     opacity: 1;
   }
@@ -15,14 +17,37 @@
 
 .carousel_item:hover {
   opacity: 1;
-  transform: scale(1.05); /* Slight zoom effect on hover */
+  transform: scale(1.02); /* Slight zoom effect on hover */
+}
+
+.carousel_card_content {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+
+  gap: 0.5rem;
+}
+
+.carousel_card_content img {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+
+  /* border: 4px solid mediumseagreen; */
+
+  object-fit: cover; /* Ensures the image covers the area without distortion */
+  width: 100%; /* Make sure the width fits the container */
+  height: 300px; /* Set a consistent height for all images */
+
+  flex: 0 0 auto; /* Ensure the image doesn't shrink or grow */
 }
 
 .carousel_text {
   display: flex;
   flex-direction: column;
   gap: 0.3rem;
-  /* text-align: center; */
+  flex: 0 0 65%;
 }
 
 .carousel_buttons {

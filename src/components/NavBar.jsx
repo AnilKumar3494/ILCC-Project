@@ -1,96 +1,74 @@
-import React, { useState, useEffect, useRef } from "react";
-import { Link, useLocation, useNavigate } from "react-router-dom";
-import { RxHamburgerMenu } from "react-icons/rx";
-import { AiOutlineClose } from "react-icons/ai"; // Close icon for the hamburger menu
+import React, { useState, useRef } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
 import navLinks from "../data/nav-links.json";
 import "./NavBar.css";
 
 const NavBar = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false); // State to control menu visibility
-  const location = useLocation(); // React Router's hook to get current location
-  const navigate = useNavigate(); // React Router's hook for navigation
-  const navRef = useRef(null); // Ref for the navigation container
+  const [dropdownOpen, setDropdownOpen] = useState(null);
+  const location = useLocation();
+  const navigate = useNavigate();
+  const navRef = useRef(null);
 
-  // Toggle the menu open/close state
-  const toggleMenu = () => {
-    setIsMenuOpen((prevState) => !prevState);
+  const handleDropdownToggle = (navLinkItem) => {
+    setDropdownOpen((prev) =>
+      prev === navLinkItem.id ? null : navLinkItem.id
+    );
   };
 
-  // Handle click outside to close the menu when clicked outside the navbar
-  const handleClickOutside = (event) => {
-    if (navRef.current && !navRef.current.contains(event.target)) {
-      setIsMenuOpen(false);
-    }
-  };
-
-  useEffect(() => {
-    // Add or remove event listener when menu is open or closed
-    if (isMenuOpen) {
-      document.addEventListener("mousedown", handleClickOutside);
+  const handleLinkClick = (path) => {
+    if (path.startsWith("#")) {
+      const targetId = path.substring(1);
+      const targetElement = document.getElementById(targetId);
+      if (location.pathname !== "/") {
+        navigate("/", { state: { scrollTo: targetId } });
+      } else {
+        targetElement?.scrollIntoView({ behavior: "smooth" });
+      }
     } else {
-      document.removeEventListener("mousedown", handleClickOutside);
+      navigate(path);
     }
-
-    return () => {
-      // Cleanup on component unmount
-      document.removeEventListener("mousedown", handleClickOutside);
-    };
-  }, [isMenuOpen]);
-
-  // Function to handle smooth scrolling to sections with `#` links
-  const handleScrollToSection = (path) => {
-    if (window.location.pathname !== "/") {
-      // Navigate to the homepage and then scroll to the section
-      navigate("/", { replace: true });
-      setTimeout(() => {
-        document.querySelector(path)?.scrollIntoView({ behavior: "smooth" });
-      }, 100); // Small delay to ensure the page is loaded
-    } else {
-      // Directly scroll to the section if already on the homepage
-      document.querySelector(path)?.scrollIntoView({ behavior: "smooth" });
-    }
+    setDropdownOpen(null);
   };
 
   return (
     <nav className="main_nav_container inline_padding" ref={navRef}>
-      {/* Logo and Hamburger menu */}
-      {/* <div className="small_navlinks">
-        <div className="hamburgermenu" onClick={toggleMenu}>
-          {isMenuOpen ? <AiOutlineClose /> : <RxHamburgerMenu />}{" "}
-      
-        </div>
-      </div> */}
-
-      {/* Navigation links */}
-      <ul className={`navlinks ${isMenuOpen ? "open" : ""}`}>
+      <ul className="navlinks">
         {navLinks.navlinks.map((navLinkItem) => (
-          <li key={navLinkItem.id}>
-            {navLinkItem.path.startsWith("#") ? (
-              <a
-                href={navLinkItem.path}
-                title={navLinkItem.label}
-                className={`link hover ${
-                  location.hash === navLinkItem.path ? "active" : "nav_item"
-                }`}
-                onClick={(e) => {
-                  e.preventDefault(); // Prevent default anchor behavior
-                  handleScrollToSection(navLinkItem.path); // Handle navigation and scrolling
-                  setIsMenuOpen(false); // Close the menu
-                }}
-              >
-                {navLinkItem.label}
-              </a>
-            ) : (
-              <Link
-                to={navLinkItem.path}
-                title={navLinkItem.label}
-                className={`link nav_item hover ${
-                  location.pathname === navLinkItem.path ? "active" : ""
-                }`}
-                onClick={() => setIsMenuOpen(false)} // Close the menu after click
-              >
-                {navLinkItem.label}
-              </Link>
+          <li
+            key={navLinkItem.id}
+            className={`nav_item ${
+              dropdownOpen === navLinkItem.id ? "open" : ""
+            }`}
+            onMouseEnter={() =>
+              navLinkItem.children && setDropdownOpen(navLinkItem.id)
+            }
+            onMouseLeave={() => navLinkItem.children && setDropdownOpen(null)}
+          >
+            <span
+              onClick={() => handleLinkClick(navLinkItem.path)}
+              className={`link ${
+                location.pathname === navLinkItem.path ? "active" : ""
+              }`}
+              title={navLinkItem.label}
+            >
+              {navLinkItem.label}
+              {navLinkItem.children && (
+                <span className="dropdown_arrow">▼</span>
+              )}
+            </span>
+            {navLinkItem.children && (
+              <ul className="dropdown_menu">
+                {navLinkItem.children.map((child) => (
+                  <li key={child.id} className="dropdown_item">
+                    <span
+                      onClick={() => handleLinkClick(child.path)}
+                      className="dropdown_link"
+                    >
+                      {child.label}
+                    </span>
+                  </li>
+                ))}
+              </ul>
             )}
           </li>
         ))}

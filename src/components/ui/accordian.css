@@ -1,0 +1,122 @@
+/* Accordion Container */
+.accordian_container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  --border-radius: 1rem;
+}
+
+/* Accordion Content */
+.accordian_content {
+  background-color: #fff;
+  border-radius: var(--border-radius);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+  overflow: hidden;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.accordian_content:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Accordion Title */
+.accordian_title {
+  border-radius: var(--border-radius);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  padding: 1rem 1.5rem;
+
+  transition: background-color 0.3s ease;
+}
+
+.accordian_title:hover {
+  background-color: var(--primary-color-light);
+}
+
+.accordian_title button {
+  border: none;
+  background: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #8b4513;
+  transition: transform 0.3s ease;
+}
+
+.accordian_para.show + button {
+  transform: rotate(180deg);
+}
+
+/* Accordion Description */
+.accordian_para {
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0 1.5rem;
+
+  transition: all 0.4s ease-in-out;
+
+  text-align: left;
+  line-height: 1.6;
+}
+
+.accordian_para.show {
+  height: auto;
+  opacity: 1;
+  padding: 0.5rem 1.5rem 1rem;
+}
+
+/* Lists */
+.accordian_para ul {
+  list-style: none;
+  padding-left: 1rem;
+  margin: 0;
+}
+
+.accordian_para ul li {
+  list-style: none;
+  position: relative;
+  margin-bottom: 0.5rem;
+  padding-left: 1rem;
+  color: #444;
+}
+
+.accordian_para ul li::before {
+  content: "#";
+  position: absolute;
+  left: 0;
+  color: var(--nav-bar);
+  font-weight: bold;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .accordian {
+    padding: 1rem;
+  }
+
+  .accordian_title {
+    font-size: 1.1rem;
+  }
+
+  .accordian_para {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .accordian_title {
+    font-size: 1rem;
+    padding: 0.75rem 1rem;
+  }
+
+  .accordian_para {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+  }
+}

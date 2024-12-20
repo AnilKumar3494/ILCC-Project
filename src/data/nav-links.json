@@ -1,31 +1,36 @@
 {
   "navlinks": [
     {
-      "id": 1,
+      "id": "home",
+      "label": "Home",
       "path": "/",
-      "label": "Home"
+      "children": [
+        {
+          "id": "sermons",
+          "label": "Sermons",
+          "path": "#sermons"
+        }
+      ]
     },
     {
-      "id": "S",
-      "path": "#sermons",
-      "label": "Sermons"
-    },
-
-    {
-      "id": "E",
-      "path": "#events",
-      "label": "Events"
+      "id": "events",
+      "label": "Events",
+      "path": "#events"
     },
     {
-      "id": 2,
-      "path": "/about",
-      "label": "About"
+      "id": "about",
+      "label": "About",
+      "path": "/about"
     },
-
     {
-      "id": 4,
-      "path": "/contact",
-      "label": "Contact"
+      "id": "history",
+      "label": "History",
+      "path": "/history"
+    },
+    {
+      "id": "contact",
+      "label": "Connect",
+      "path": "/contact"
     }
   ]
 }

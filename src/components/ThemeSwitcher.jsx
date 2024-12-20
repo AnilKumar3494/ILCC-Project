@@ -1,12 +1,19 @@
 import React, { useState, useEffect } from "react";
 
 function ThemeSwitcher() {
-  const [isChristmasGreen, setIsChristmasGreen] = useState(true);
+  //   const [isChristmasGreen, setIsChristmasGreen] = useState(true);
+  const [isChristmasGreen, setIsChristmasGreen] = useState(
+    () => JSON.parse(localStorage.getItem("isChristmasGreen")) ?? true
+  );
 
-  // Apply the selected theme
+  // Apply the selected theme and save to localStorage
   useEffect(() => {
     if (isChristmasGreen) {
-      document.documentElement.style.setProperty("--primary-color", "#307054");
+      document.documentElement.style.setProperty("--primary-color", "#4e8c70");
+      document.documentElement.style.setProperty(
+        "--primary-color-light",
+        "#cef2e4"
+      );
       document.documentElement.style.setProperty(
         "--background-color",
         "#f8f8f8"
@@ -23,6 +30,10 @@ function ThemeSwitcher() {
     } else {
       document.documentElement.style.setProperty("--primary-color", "#46211a");
       document.documentElement.style.setProperty(
+        "--primary-color-light",
+        "#fdf9f3"
+      );
+      document.documentElement.style.setProperty(
         "--background-color",
         "#f1d3b2"
       );
@@ -36,6 +47,9 @@ function ThemeSwitcher() {
         "#444555"
       );
     }
+
+    // Save theme choice to localStorage
+    localStorage.setItem("isChristmasGreen", JSON.stringify(isChristmasGreen));
   }, [isChristmasGreen]);
 
   // Toggle theme function
@@ -52,7 +66,6 @@ function ThemeSwitcher() {
         position: "fixed",
         bottom: "20px",
         right: "20px",
-
         backgroundColor: "var(--primary-color)",
         color: "var(--nav-bar-text)",
         border: "none",

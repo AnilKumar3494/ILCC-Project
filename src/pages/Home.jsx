@@ -1,5 +1,5 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
 import "./home.css";
 
 // components imports
@@ -8,17 +8,25 @@ import UpcomingEvents from "../components/UpcomingEvents";
 
 // data imports
 import sermonsData from "../data/sermons-data.json";
-// import masonaryImages from "../data/masonary-images.json";
 
 const Home = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.state?.scrollTo) {
+      const targetElement = document.getElementById(location.state.scrollTo);
+      targetElement?.scrollIntoView({ behavior: "smooth" });
+    }
+  }, [location.state]);
+
   return (
-    <main>
-      <section className="dashboard bg_img ">
+    <main className="home_section">
+      <section className="dashboard bg_img">
         <div className="dashboard_content_2">
           <div className="content_and_buttons">
             <div className="button_container">
-              <Link to={"/about"} className="button" title="Know More">
-                Know More
+              <Link to={"/about"} className="button" title="About Us">
+                About Us
               </Link>
 
               <Link to={"/contact"} className="button" title="Contact Us">
@@ -29,8 +37,9 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="sermons">
-        <div className="seromns_content" id="sermons">
+      <section className="sermons" id="sermons">
+        <div className="seromns_content">
+          {/* might chage */}
           <h2>Picked Sermons</h2>
           <h4>Our lives in the word of God</h4>
         </div>
@@ -50,8 +59,6 @@ const Home = () => {
           <h2>IMAGES COLLECTION</h2>
           <h4>Sharing our faith and community stories</h4>
         </div>
-
-        {/* <ImageGallery masonaryImages={masonaryImages} /> */}
       </section>
     </main>
   );

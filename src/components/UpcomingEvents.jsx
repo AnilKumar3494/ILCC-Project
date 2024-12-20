@@ -10,6 +10,8 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 
+import upcomingEvents from "../data/events.json";
+
 const UpcomingEvents = () => {
   return (
     <>
@@ -20,26 +22,29 @@ const UpcomingEvents = () => {
         className="carousel_container"
       >
         <CarouselContent className="carousel_displayed">
-          {Array.from({ length: 5 }).map((_, index) => (
+          {upcomingEvents.map((upcomingEvent) => (
             <CarouselItem
-              key={index}
+              key={upcomingEvent.id}
               className="md:basis-1/2 lg:basis-1/3 carousel_item"
             >
               <div className="p-1">
                 <Card>
                   <CardContent className="flex flex-col items-center justify-center p-2 carousel_card_content">
                     <img
-                      src="https://th.bing.com/th/id/R.e1edb02ec50549b76413c2f18f63d110?rik=0OBp0k8jNoFPzw&pid=ImgRaw&r=0"
-                      alt={`Img goes here ${index + 1}`}
+                      src={
+                        upcomingEvent.imageSrc
+                          ? upcomingEvent.imageSrc
+                          : "https://via.placeholder.com/150"
+                      }
+                      alt={`${upcomingEvent.title}`}
                     />
                     <div className="carousel_text">
-                      <h2>{`Event heading ${index + 1}`}</h2>
-                      <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing
-                        elit. Quasi, tempore?
-                      </p>
-                      <p>Date:</p>
-                      <p>Time:</p>
+                      <h3>{upcomingEvent.title}</h3>
+                      <p>{upcomingEvent.description}</p>
+                      <p>{`Date: ${upcomingEvent.date}`}</p>
+                      {upcomingEvent.time && (
+                        <p>{`Time: ${upcomingEvent.time}`}</p>
+                      )}
                     </div>
                   </CardContent>
                 </Card>
@@ -47,6 +52,7 @@ const UpcomingEvents = () => {
             </CarouselItem>
           ))}
         </CarouselContent>
+
         <div className="carousel_buttons">
           <CarouselPrevious />
           <CarouselNext />

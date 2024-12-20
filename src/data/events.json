@@ -1,9 +1,42 @@
-Event ;
-required:
-title, description, image Date, time, 
-
-optional - 
-location
-registration link 
-
-scrollable
+[
+  {
+    "id": "1",
+    "title": "Inauguration of Jubilee",
+    "date": "Dec 8th, 2025",
+    "time": "3:00 PM",
+    "description": "Jubilee inauguration Mass celebrated by Fr. Raju and other clergy at Assumption BVM.",
+    "imageSrc": "https://github.com/AnilKumar3494/ILCC-images/blob/main/events/Jubilee-Inauguration.jpeg?raw=true"
+  },
+  {
+    "id": "2",
+    "title": "Christmas Carolling",
+    "date": "Dec 1st - Dec 13th, 2025",
+    "time": "",
+    "description": "Community members visited families with a message of peace, joy, and belonging.",
+    "imageSrc": "https://github.com/AnilKumar3494/ILCC-images/blob/main/events/Carolling-1-Dec-25.jpeg?raw=true"
+  },
+  {
+    "id": "3",
+    "title": "Dec 25th Christmas",
+    "date": "Dec 24th, 2025",
+    "time": "10:00 PM",
+    "description": "Christmas Mass for the community with refreshments served afterward.",
+    "imageSrc": "https://github.com/AnilKumar3494/ILCC-images/blob/main/events/Christmas-5.jpeg?raw=true"
+  },
+  {
+    "id": "4",
+    "title": "Annual Retreat June 2025",
+    "date": "June 10 - June 11, 2025",
+    "time": "",
+    "description": "Mariam retreat led by Rev. Dr. V.P. Joseph at National Shrine of Our Lady of Czestochowa.",
+    "imageSrc": "https://github.com/AnilKumar3494/ILCC-images/blob/main/events/annaul%20retreat%202025.jpg?raw=true"
+  },
+  {
+    "id": "5",
+    "title": "25th Anniversary of ILCC",
+    "date": "August 2025",
+    "time": "",
+    "description": "Celebrating the Jubilee Year, marking 25 years of the community's history.",
+    "imageSrc": "https://github.com/AnilKumar3494/ILCC-images/blob/main/events/Jubillee-2025.jpeg?raw=true"
+  }
+]

@@ -8,6 +8,7 @@ import Contact from "./pages/Contact";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import ThemeSwitcher from "./components/ThemeSwitcher";
+import History from "./pages/History";
 
 // import Header from "./components/Header";
 
@@ -21,8 +22,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        {/* <Route path="/sermons" element={<Sermons />} />
-        <Route path="/events" element={<Events />} /> */}
+        <Route path="/history" element={<History />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
