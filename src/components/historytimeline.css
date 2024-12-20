@@ -4,8 +4,6 @@
   flex-direction: column;
   align-items: center;
   position: relative;
-
-  /* border: 4px solid blue; */
 }
 
 /* The vertical line */
@@ -35,6 +33,8 @@
 
   border-radius: 8px;
   background-color: var(--background-color);
+
+  /* filter: blur(2px); */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 
   transition: all 0.3s ease-in-out;

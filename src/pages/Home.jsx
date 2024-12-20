@@ -20,7 +20,7 @@ const Home = () => {
   }, [location.state]);
 
   return (
-    <main>
+    <main className="home_section">
       <section className="dashboard bg_img">
         <div className="dashboard_content_2">
           <div className="content_and_buttons">
@@ -39,6 +39,7 @@ const Home = () => {
 
       <section className="sermons" id="sermons">
         <div className="seromns_content">
+          {/* might chage */}
           <h2>Picked Sermons</h2>
           <h4>Our lives in the word of God</h4>
         </div>

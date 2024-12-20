@@ -26,7 +26,7 @@ const Accordian = () => {
                     className="accordian_title"
                     onClick={() => toggleAccordion(`${index}-${subIndex}`)}
                   >
-                    <h3>{subSection.title}</h3>
+                    <h4>{subSection.title}</h4>
                     <button>{isOpen ? "−" : "+"}</button>
                   </div>
                   <div className={`accordian_para ${isOpen ? "show" : ""}`}>

@@ -1,6 +1,9 @@
-main > section {
+.home_section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--section-gaps);
+
   text-align: center;
-  margin-bottom: 2rem;
 }
 .dashboard {
   height: 80dvh;
@@ -8,8 +11,6 @@ main > section {
   display: grid;
   place-items: center;
   text-align: center;
-
-  /* padding-inline: var(--padding-xlg); */
 }
 
 .dashboard.bg_img {
@@ -75,12 +76,10 @@ main > section {
   gap: 1rem;
 }
 
-.sermons {
-  height: 100dvh;
-  /* border: 2px solid magenta; */
-  padding-top: 6rem;
-}
-
-.seromns_content {
-  padding-bottom: 1.5rem;
+.sermons,
+.upcoming_events,
+.image_gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }

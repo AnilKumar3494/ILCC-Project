@@ -10,8 +10,11 @@
   --ff-secondary: Bungee, cursive;
   --ff-accent: Bungee Shade, cursive;
 
+  --bg-white: #fff;
+
   /* green christmaas */
-  --primary-color: #307054;
+  --primary-color: #4e8c70;
+  --primary-color-light: #cef2e4;
   --background-color: #f8f8f8;
   --top-bar: #ffffff;
   --top-bar-text: #222;
@@ -23,6 +26,7 @@
 
   /* Brown and red */
   --primary-color: #46211a;
+  --primary-color-light: #fdf9f3;
   --background-color: #f1d3b2;
   --top-bar: #46211a;
   --top-bar-text: #f1d3b2;
@@ -36,21 +40,24 @@
   --fs-200: 0.725rem;
   --fs-300: 0.5rem;
   --fs-400: 0.65rem;
-  --fs-500: 0.825rem;
+  /* --fs-500: 0.825rem; */
   --fs-550: 1rem;
   --fs-600: 1rem;
   --fs-700: 1.25rem;
   --fs-800: 2rem;
   --fs-850: 1.9rem;
 
-  --fs-h1: 1rem;
-  --fs-h2: 1.2rem;
-  --fs-h3: 0.825rem;
+  --fs-h1: 3vw;
+  --fs-h2: 2.5vw;
+  --fs-h3: 1.8vw;
+
+  --fs-para: 1vw;
 
   --fs-namedisplay: 3.5vw;
 
   --inline-padding: 0.5rem;
   /* --page-gap: ; */
+  --section-gaps: 3rem;
 }
 /* Medium screens (min-width: 50em or 800px) */
 @media only screen and (min-width: 50em) {
@@ -59,15 +66,11 @@
     --fs-200: 0.875rem;
     --fs-300: 1rem;
     --fs-400: 1.125rem;
-    --fs-500: 1rem;
+    /* --fs-500: 1rem; */
     --fs-600: 2rem;
     --fs-700: 2.75rem;
     --fs-800: 3rem;
     --fs-900: 4rem;
-
-    --fs-h1: 4rem;
-    --fs-h2: 2.5vw;
-    --fs-h3: 1.1rem;
 
     --inline-padding: 1rem;
 
@@ -81,15 +84,11 @@
     --fs-200: 0.875rem;
     --fs-300: 1rem;
     --fs-400: 1.125rem;
-    --fs-500: 1rem;
+    /* --fs-500: 1rem; */
     --fs-600: 2rem;
     --fs-800: 2.3rem;
     --fs-850: 4.5rem;
     --fs-900: 5rem;
-
-    --fs-h1: 4rem;
-    --fs-h2: 2.5vw;
-    --fs-h3: 1.1rem;
 
     --inline-padding: 1.25rem;
     --page-gap-l: 10rem;
@@ -228,14 +227,14 @@ h2 {
 }
 h3 {
   font-size: var(--fs-h3);
-  font-weight: 550;
+  font-weight: 600;
 }
 h4 {
   font-size: var(--fs-400);
 }
 
 p {
-  font-size: var(--fs-500);
+  font-size: var(--fs-para);
 }
 
 a {
@@ -311,7 +310,6 @@ a:hover {
 
 .button:hover {
   scale: 1.03;
-  /* background: var(--nav-bar); */
 }
 
 @keyframes fadeIn {

@@ -9,7 +9,11 @@ function ThemeSwitcher() {
   // Apply the selected theme and save to localStorage
   useEffect(() => {
     if (isChristmasGreen) {
-      document.documentElement.style.setProperty("--primary-color", "#307054");
+      document.documentElement.style.setProperty("--primary-color", "#4e8c70");
+      document.documentElement.style.setProperty(
+        "--primary-color-light",
+        "#cef2e4"
+      );
       document.documentElement.style.setProperty(
         "--background-color",
         "#f8f8f8"
@@ -25,6 +29,10 @@ function ThemeSwitcher() {
       );
     } else {
       document.documentElement.style.setProperty("--primary-color", "#46211a");
+      document.documentElement.style.setProperty(
+        "--primary-color-light",
+        "#fdf9f3"
+      );
       document.documentElement.style.setProperty(
         "--background-color",
         "#f1d3b2"

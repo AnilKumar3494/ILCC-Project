@@ -37,6 +37,10 @@ const ImageGallery = ({ sermonsData, masonaryImages, contactInfoData }) => {
                 alt={membersInfo.name}
                 className="card_img"
               />
+              <div className="card_content">
+                <h4>{membersInfo.name}</h4>
+                <p>{membersInfo.role}</p>
+              </div>
             </div>
           ))}
         </div>

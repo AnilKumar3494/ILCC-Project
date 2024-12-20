@@ -36,7 +36,7 @@
 }
 
 .accordian_title:hover {
-  background-color: #f9f1e7;
+  background-color: var(--primary-color-light);
 }
 
 .accordian_title button {

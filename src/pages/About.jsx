@@ -22,9 +22,8 @@ const About = () => {
         </picture>
 
         <section className="aboutus_container">
-          <div className="banner_content">
-            <h1>ABOUT US</h1>
-            {/* <RandomVerse /> */}
+          <div class="banner_content">
+            <h2>ABOUT US</h2>
           </div>
 
           <div className="aboutus_content_container">
@@ -59,7 +58,7 @@ const About = () => {
         </section>
 
         <section className="members">
-          <h4>Dedicated Members of Our Community</h4>
+          <h3>Meet Our Team</h3>
           <ImageGallery contactInfoData={contactInfoData} />
         </section>
 
