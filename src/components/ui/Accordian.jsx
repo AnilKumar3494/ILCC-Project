@@ -4,7 +4,8 @@ import "./accordian.css";
 import aboutUsContent from "../../data/about-us-content.json";
 
 const Accordian = () => {
-  const [openIndexes, setOpenIndexes] = useState([]);
+  // Initialize with the first subsection open
+  const [openIndexes, setOpenIndexes] = useState(["2-0"]);
 
   const toggleAccordion = (index) => {
     setOpenIndexes((prev) =>
@@ -12,19 +13,23 @@ const Accordian = () => {
     );
   };
 
+  // console.log(openIndexes);
+
   return (
     <div className="accordian_jsx">
       {aboutUsContent.sections.map((section, index) => (
         <div key={index} className="accordian_container">
           {section.subSections &&
             section.subSections.map((subSection, subIndex) => {
-              const isOpen = openIndexes.includes(`${index}-${subIndex}`);
+              const accordionKey = `${index}-${subIndex}`;
+              const isOpen = openIndexes.includes(accordionKey);
 
+              // console.log(accordionKey);
               return (
                 <div key={subIndex} className="accordian_content">
                   <div
                     className="accordian_title"
-                    onClick={() => toggleAccordion(`${index}-${subIndex}`)}
+                    onClick={() => toggleAccordion(accordionKey)}
                   >
                     <h4>{subSection.title}</h4>
                     <button>{isOpen ? "−" : "+"}</button>
@@ -36,7 +41,7 @@ const Accordian = () => {
                       <ul>
                         {subSection.list &&
                           subSection.list.map((listItem, listIndex) => (
-                            <li key={listIndex}>{`${listItem}`}</li>
+                            <li key={listIndex}>{listItem}</li>
                           ))}
                       </ul>
                     )}
