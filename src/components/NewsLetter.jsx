@@ -13,8 +13,10 @@ const NewsLetter = () => {
       </div>
 
       <div class="email">
-        <input type="text" placeholder="email: jondoe@email.com" />
-        <button className="button">Sign Up</button>
+        {/* <input type="text" placeholder="email: jondoe@email.com" /> */}
+        <button className="button">
+          <a href="">Join Now</a>
+        </button>
       </div>
     </section>
   );

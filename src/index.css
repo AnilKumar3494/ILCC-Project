@@ -18,22 +18,26 @@
   --background-color: #f8f8f8;
   --top-bar: #ffffff;
   --top-bar-text: #222;
-  --nav-bar: #307054;
-  --nav-bar-text: #f1d3b2;
+  --nav-bar: #002d3d;
+  --nav-bar-text: #d8be76;
   --top-bar: #f8f8f8;
   --text-color: #333333;
   --text-color-light: #444555;
+  --nameDisplay-bg-img: url("https://img.freepik.com/free-psd/realistic-snowflakes-border-design_23-2151074098.jpg?t=st=1735945104~exp=1735948704~hmac=9c01c1958750a9ede10612dd0c752380d3c632866be3d16362184da8f481003a&w=2000");
+  --main-bg-img: url("https://img.freepik.com/free-vector/blue-snowflake-background-christmas-winter-doodle-vector_53876-151495.jpg?t=st=1735935462~exp=1735939062~hmac=aaf780b39938ed64bc9ef9e95237643a504859eacc95bf5b6033bb47a89d2e7d&w=2000");
 
   /* Brown and red */
   --primary-color: #46211a;
   --primary-color-light: #fdf9f3;
   --background-color: #f1d3b2;
   --top-bar: #46211a;
-  --top-bar-text: #f1d3b2;
+  --top-bar-text: #222;
   --nav-bar: #a43820;
   --nav-bar-text: #f1d3b2;
   --text-color: #333333;
   --text-color-light: #444555;
+  --nameDisplay-bg-img: url("https://img.freepik.com/free-vector/watercolor-leaves-falling-background_52683-74282.jpg?t=st=1735949117~exp=1735952717~hmac=8c9206bbd7c9776c4dfafdf30245ae98d3dff8bc7b77c6def3c41072d82cfda9&w=2000");
+  --main-bg-img: url("https://img.freepik.com/free-vector/winter-snowflake-background-christmas-aesthetic-doodle-white-vector_53876-151488.jpg?t=st=1735935337~exp=1735938937~hmac=77b3e4949a8ead0c1482315b60be9a514a70b24ac49abaa043c2dc1edf97d966&w=2000");
 
   /* Smaller Screens below 800 */
   --fs-100: 0.425rem;
@@ -53,7 +57,7 @@
 
   --fs-para: 1vw;
 
-  --fs-namedisplay: 3.5vw;
+  --fs-namedisplay: 2.8vw;
 
   --inline-padding: 0.5rem;
   /* --page-gap: ; */
@@ -193,6 +197,8 @@ select {
 main {
   display: flex;
   flex-direction: column;
+
+  background-image: var(--main-bg-img);
 }
 
 body {
@@ -282,6 +288,7 @@ a:hover {
     var(--nav-bar) 0%,
     var(--nav-bar) 100%
   );
+
   box-shadow: 0px 2px 4px rgb(45 35 66 / 40%),
     0px 7px 13px -3px rgb(45 35 66 / 30%),
     inset 0px -3px 0px rgb(58 65 111 / 50%);

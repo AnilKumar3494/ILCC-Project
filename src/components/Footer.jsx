@@ -15,13 +15,18 @@ const Footer = () => {
   return (
     <main>
       <footer className="footer">
-        <section className="logo_container">
-          <img src={navLinks.navlinks[2]} alt="ILCC" className="logo" />
-          <RandomVerse />
-        </section>
-
         <section>
           <NewsLetter />
+        </section>
+
+        <section className="logo_container">
+          <img
+            src="https://github.com/AnilKumar3494/ILCC-images/blob/main/logo/ILCC%20Logo%20no%20bg.png?raw=true"
+            alt="ILCC"
+            className="logo"
+            style={{ width: "110px" }}
+          />
+          <RandomVerse />
         </section>
 
         <section className="footer_links">

@@ -1,5 +1,15 @@
 .footer {
   background-color: var(--primary-color);
+  /* background-image: url("../assets/images/footer-bg.jpeg");
+   */
+
+  background-image: url("../assets/images/bg-imgs/footer-bg.jpeg");
+
+  background-position: top;
+
+  background-size: cover;
+
+  background-position: bottom;
   color: #fff;
   display: flex;
   flex-direction: column;
