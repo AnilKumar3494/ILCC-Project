@@ -12,7 +12,7 @@ const SocialLinks = () => {
   };
 
   return (
-    <>
+    <div className="flex gap-3">
       {socialLinksData.socialLinks.map((socialInfo) => (
         <a href={socialInfo.href} key={socialInfo.id} title={socialInfo.title}>
           <FontAwesomeIcon
@@ -21,7 +21,7 @@ const SocialLinks = () => {
           />
         </a>
       ))}
-    </>
+    </div>
   );
 };
 

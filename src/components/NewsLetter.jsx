@@ -8,7 +8,7 @@ const NewsLetter = () => {
         <h3>Sign Up for Our Newsletter</h3>
         <p>
           Join for event updates and uplifting
-          <span> spiritual reflections.</span>
+          <span style={{ color: "#ccaf63" }}> spiritual reflections.</span>
         </p>
       </div>
 

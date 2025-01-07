@@ -29,7 +29,7 @@ const UpcomingEvents = () => {
             >
               <div className="p-1">
                 <Card>
-                  <CardContent className="flex flex-col items-center justify-center p-2 carousel_card_content">
+                  <CardContent className="flex flex-col items-center justify-center p-2 carousel_card_content bg-white ">
                     <img
                       src={
                         upcomingEvent.imageSrc

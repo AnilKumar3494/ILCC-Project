@@ -6,7 +6,7 @@ const NameDisplay = () => {
     <div className="name_display">
       <picture>
         <img
-          src="https://github.com/AnilKumar3494/ILCC-images/blob/main/logo/ILCC%20Logo%20no%20bg.png?raw=true"
+          src="https://github.com/AnilKumar3494/ILCC-images/blob/main/logo/ILCC%20Logo%20New%20Final.png?raw=true"
           alt="ILCC Logo"
           className="ilcc_logo"
         />
