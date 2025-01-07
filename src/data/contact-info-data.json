@@ -1,6 +1,18 @@
 {
   "committeeMembers": [
     {
+      "id": 9,
+      "name": "Raju Pillai",
+      "role": "Founder",
+      "imgSrc": "https://github.com/AnilKumar3494/ILCC-images/blob/main/church-members/FrRajuPillai-Founder.jpg?raw=true"
+    },
+    {
+      "id": 10,
+      "name": "Lucy das",
+      "role": "Founder",
+      "imgSrc": "https://github.com/AnilKumar3494/ILCC-images/blob/main/church-members/Lucy%20Das%20-%20Founder.JPG?raw=true"
+    },
+    {
       "id": "Fr1",
       "name": "Fr. Lenin Fernades",
       "role": "President",
@@ -10,13 +22,19 @@
       "id": "Fr2",
       "name": "Fr. Mike Davis",
       "role": "Father",
-      "imgSrc": "https://github.com/AnilKumar3494/ILCC-images/blob/main/church-members/Fr%20Mike%20Davis.jpeg?raw=true"
+      "imgSrc": "https://github.com/AnilKumar3494/ILCC-images/blob/main/church-members/FrMikeDavis-PastorAssumptionBVM.jpg?raw=true"
     },
     {
       "id": 2,
       "name": "Nevin Das",
       "role": "Secretary",
-      "imgSrc": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
+      "imgSrc": "https://github.com/AnilKumar3494/ILCC-images/blob/main/church-members/Nevin-Secretary.JPEG?raw=true"
+    },
+    {
+      "id": 11,
+      "name": "Raju",
+      "role": "Auditor",
+      "imgSrc": "https://github.com/AnilKumar3494/ILCC-images/blob/main/church-members/Raju%20-%20Auditor.jpg?raw=true"
     },
     {
       "id": 3,

@@ -6,6 +6,7 @@ import {
   faLocationDot,
 } from "@fortawesome/free-solid-svg-icons";
 import contactInfoData from "../data/contact-info-data.json";
+import jubileeInfoData from "../data/jubilee-info-data.json";
 
 const iconMappings = {
   faEnvelope: faEnvelope,
@@ -34,6 +35,8 @@ const ContactDetails = ({ maxId }) => {
             </a>
           </div>
         ))}
+
+        
     </>
   );
 };

@@ -1,7 +1,7 @@
 import React from "react";
 import "./ImageGallery.css";
 
-const ImageGallery = ({ sermonsData, masonaryImages, contactInfoData }) => {
+const ImageGallery = ({ sermonsData, masonaryImages, contactInfoData, jubileeInfodata }) => {
   if (sermonsData) {
     return (
       <div className="grid_container">
@@ -31,6 +31,29 @@ const ImageGallery = ({ sermonsData, masonaryImages, contactInfoData }) => {
       <div className="grid_container">
         <div className="members_grid">
           {contactInfoData.committeeMembers.map((membersInfo) => (
+            <div className="card" key={membersInfo.id} title={membersInfo.name}>
+              <img
+                src={membersInfo.imgSrc}
+                alt={membersInfo.name}
+                className="card_img"
+              />
+              <div className="card_content">
+                <h4 className="card_title">{membersInfo.name}</h4>
+                <p className="card_price">{`${membersInfo.role}`}</p>
+                {/* <p className="card_description">Located in {membersInfo.city}</p> */}
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    );
+  }
+  
+  if (jubileeInfodata) {
+    return (
+      <div className="grid_container">
+        <div className="members_grid">
+          {jubileeInfodata.jubileeMembers.map((membersInfo) => (
             <div className="card" key={membersInfo.id} title={membersInfo.name}>
               <img
                 src={membersInfo.imgSrc}

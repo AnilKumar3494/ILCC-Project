@@ -5,6 +5,13 @@
       "path": "/",
       "label": "Home"
     },
+
+    {
+      "id": 2,
+      "path": "/about",
+      "label": "About"
+    },
+
     {
       "id": "S",
       "path": "#sermons",
@@ -16,16 +23,11 @@
       "path": "#events",
       "label": "Events"
     },
-    {
-      "id": 2,
-      "path": "/about",
-      "label": "About"
-    },
-
+    
     {
       "id": 4,
       "path": "/contact",
-      "label": "Contact"
+      "label": "Meet Our Team"
     }
   ]
 }
