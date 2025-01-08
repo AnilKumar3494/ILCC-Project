@@ -20,24 +20,25 @@ const Footer = () => {
     <main>
       <footer className="footer">
         <div className="footer_container">
-          <section className="logo_container">
-            <img
-              src="https://github.com/AnilKumar3494/ILCC-images/blob/main/logo/ILCC%20Logo%20New%20Final.png?raw=true"
-              alt="ILCC"
-              className="logo"
-              style={{ width: "160px" }}
-            />
-
+          <div className="logo_container">
+            <Link to={"/"}>
+              <img
+                src="https://github.com/AnilKumar3494/ILCC-images/blob/main/logo/ILCC%20Logo%20New%20Final.png?raw=true"
+                alt="ILCC"
+                className="logo hover:scale-105 transition-all duration-200 ease-in-out"
+                style={{ width: "160px" }}
+              />
+            </Link>
             <SocialLinks />
-          </section>
+          </div>
 
-          <section className="quicklinks_container">
+          <div className="quicklinks_container">
             <h4>Quick Links</h4>
             <div className="quicklink">
               {filteredLinks.map((link) => (
-                <li key={link.id}>
+                <li key={link.id} className="hover:underline">
                   <Link to={link.path}>
-                    <div className="quicklinks_withicon">
+                    <div className="quicklinks_withicon ">
                       <span>{link.label}</span>{" "}
                       <span>
                         <VscLinkExternal />
@@ -47,14 +48,21 @@ const Footer = () => {
                 </li>
               ))}
             </div>
-          </section>
+          </div>
 
-          <section className="footer_links">
+          <div className="footer_links">
             <div className="footer_contactDetails">
               <h4>Contact Us</h4>
               <ContactDetails maxId={3} />
             </div>
-          </section>
+          </div>
+
+          <div className="subscribe_container">
+            <h4>Be a Part of Us</h4>
+            <button className="button">
+              <a href="">Join Us</a>
+            </button>
+          </div>
         </div>
 
         <div className="randomverse">

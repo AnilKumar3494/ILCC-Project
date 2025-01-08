@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from "react";
 
 function ThemeSwitcher() {
-  //   const [isChristmasGreen, setIsChristmasGreen] = useState(true);
-  const [isChristmasGreen, setIsChristmasGreen] = useState(
-    () => JSON.parse(localStorage.getItem("isChristmasGreen")) ?? true
+  //   const [isWinterTheme, setIsWinterTheme] = useState(true);
+  const [isWinterTheme, setIsWinterTheme] = useState(
+    () => JSON.parse(localStorage.getItem("isWinterTheme")) ?? true
   );
 
   // Apply the selected theme and save to localStorage
   useEffect(() => {
-    if (isChristmasGreen) {
+    if (isWinterTheme) {
       document.documentElement.style.setProperty("--primary-color", "#4e8c70");
       document.documentElement.style.setProperty(
         "--primary-color-light",
@@ -34,6 +34,11 @@ function ThemeSwitcher() {
       document.documentElement.style.setProperty(
         "--main-bg-img",
         "url('https://img.freepik.com/free-vector/blue-snowflake-background-christmas-winter-doodle-vector_53876-151495.jpg?t=st=1735935462~exp=1735939062~hmac=aaf780b39938ed64bc9ef9e95237643a504859eacc95bf5b6033bb47a89d2e7d&w=2000')"
+      );
+
+      document.documentElement.style.setProperty(
+        "--footer-bg-img",
+        "url(https://github.com/AnilKumar3494/ILCC-images/blob/main/bg-imgaes/footer-bg.jpeg?raw=true)"
       );
     } else {
       document.documentElement.style.setProperty("--primary-color", "#46211a");
@@ -63,15 +68,20 @@ function ThemeSwitcher() {
         "--main-bg-img",
         "url('https://img.freepik.com/free-vector/winter-snowflake-background-christmas-aesthetic-doodle-white-vector_53876-151488.jpg?t=st=1735935337~exp=1735938937~hmac=77b3e4949a8ead0c1482315b60be9a514a70b24ac49abaa043c2dc1edf97d966&w=2000')"
       );
+
+      document.documentElement.style.setProperty(
+        "--footer-bg-img",
+        "url(https://img.freepik.com/free-photo/ai-generated-fall-leaves-picture_23-2150648626.jpg?t=st=1736301458~exp=1736305058~hmac=d660ba6bff6bef8ba0da15b00794cab2efdd909f5ab95afa9cecda952e9346f1&w=1480)"
+      );
     }
 
     // Save theme choice to localStorage
-    localStorage.setItem("isChristmasGreen", JSON.stringify(isChristmasGreen));
-  }, [isChristmasGreen]);
+    localStorage.setItem("isWinterTheme", JSON.stringify(isWinterTheme));
+  }, [isWinterTheme]);
 
   // Toggle theme function
   const toggleTheme = () => {
-    setIsChristmasGreen(!isChristmasGreen);
+    setIsWinterTheme(!isWinterTheme);
   };
 
   return (
@@ -91,10 +101,10 @@ function ThemeSwitcher() {
         zIndex: 1000,
       }}
     >
-      {isChristmasGreen ? (
-        <>🎄 Switch to Brown & Red 🎨</>
+      {isWinterTheme ? (
+        <>🎄 Switch to Fall Theme 🎨</>
       ) : (
-        <>🎨 Switch to Christmas Green 🎄</>
+        <>❄️ Switch to Winter Theme 🌨️</>
       )}
     </button>
   );

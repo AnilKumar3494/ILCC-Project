@@ -27,7 +27,7 @@ const History = () => {
         }}
       ></div>
 
-      <h3>History</h3>
+      <h2>History</h2>
       <HistoryTimeLine />
     </main>
   );

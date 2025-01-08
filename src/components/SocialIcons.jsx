@@ -17,7 +17,7 @@ const SocialLinks = () => {
         <a href={socialInfo.href} key={socialInfo.id} title={socialInfo.title}>
           <FontAwesomeIcon
             icon={iconMappings[socialInfo.iconName]}
-            className="fa_icons"
+            className="fa_icons size-6 hover:scale-125 transition-all duration-200 ease-in-out"
           />
         </a>
       ))}
