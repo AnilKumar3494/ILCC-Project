@@ -9,7 +9,7 @@ const RandomVerse = () => {
     <div className="randomverse">
       <h4 style={{ fontStyle: "italic", fontSize: "var(--fs-400)" }}>
         {versesData.verses[randomIndexGen].text}
-        <span>`~ ${versesData.verses[randomIndexGen].reference}`</span>
+        <span> ~{versesData.verses[randomIndexGen].reference}</span>
       </h4>
     </div>
   );

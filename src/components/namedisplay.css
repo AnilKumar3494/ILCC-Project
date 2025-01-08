@@ -6,8 +6,23 @@
   padding-block: 1rem;
 
   /* border: 2px solid maroon; */
-  max-height: 18dvh;
+  /* max-height: 18dvh; */
+
+  /* winter  */
+  background-image: var(--nameDisplay-bg-img);
+
+  background-position: top;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+  /* gap: 4rem; */
 }
+.name_display img {
+  width: 130px;
+}
+
 .name_display h1 {
   font-weight: bold;
   font-family: var(--ff-poppins);
