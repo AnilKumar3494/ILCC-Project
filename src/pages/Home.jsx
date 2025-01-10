@@ -8,6 +8,7 @@ import UpcomingEvents from "../components/UpcomingEvents";
 
 // data imports
 import sermonsData from "../data/sermons-data.json";
+import Masonary from "@/components/Masonary";
 
 const Home = () => {
   const location = useLocation();
@@ -75,6 +76,7 @@ const Home = () => {
         <div className="seromns_content">
           <h2>IMAGES COLLECTION</h2>
           <h4>Sharing our faith and community stories</h4>
+          <Masonary />
         </div>
       </section>
     </main>
