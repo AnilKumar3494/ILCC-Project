@@ -78,6 +78,18 @@
   gap: 1rem;
 }
 
+.kreupasanam_event {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+
+  gap: 0.5rem;
+}
+
+.kreupasanam_event img {
+  border-radius: var(--radius);
+}
+
 .sermons,
 .upcoming_events,
 .image_gallery {

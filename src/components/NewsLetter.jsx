@@ -11,13 +11,6 @@ const NewsLetter = () => {
           <span style={{ color: "#ccaf63" }}> spiritual reflections.</span>
         </p>
       </div>
-
-      <div class="email">
-        {/* <input type="text" placeholder="email: jondoe@email.com" /> */}
-        <button className="button">
-          <a href="">Join Now</a>
-        </button>
-      </div>
     </section>
   );
 };
