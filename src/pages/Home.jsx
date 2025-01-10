@@ -37,6 +37,23 @@ const Home = () => {
         </div>
       </section>
 
+      <section className="kreupasanam_event">
+        <picture>
+          <img
+            src="https://github.com/AnilKumar3494/ILCC-images/blob/main/events/kreupasanam.jpeg?raw=true"
+            alt=""
+          />
+        </picture>
+        <button className="button">
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLScprJuIuPJZL6E6YNdz1s1Jm6M7vr6AjSV3OJ2gwRZjPUTW9Q/viewform"
+            target="_blank"
+          >
+            Register Here
+          </a>
+        </button>
+      </section>
+
       <section className="sermons" id="sermons">
         <div className="seromns_content">
           {/* might chage */}

@@ -104,7 +104,7 @@ function ThemeSwitcher() {
       {isWinterTheme ? (
         <>🎄 Switch to Fall Theme 🎨</>
       ) : (
-        <>❄️ Switch to Winter Theme 🌨️</>
+        <>❄️ Switch to Festive Winter Theme 🌨️</>
       )}
     </button>
   );
