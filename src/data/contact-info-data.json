@@ -77,15 +77,15 @@
   "contactInfo": [
     {
       "id": 1,
-      "href": "mailto:abc@gmail.com",
-      "address": "abc@gmail.com",
+      "href": "mailto:ilccphilly@gmail.com ",
+      "address": "ilccphilly@gmail.com ",
       "title": "Email",
       "iconName": "faEnvelope"
     },
     {
       "id": 2,
-      "href": "tel:+1 123-456-789",
-      "address": "+1 123-456-789",
+      "href": "tel:+1 267-724-7176",
+      "address": "+1 267-724-7176",
       "title": "Phone",
       "iconName": "faPhoneAlt"
     },

@@ -2,14 +2,9 @@ import { Image } from "react-grid-gallery";
 
 export const images = [
     {
-        src: "https://c2.staticflickr.com/9/8817/28973449265_07e3aa5d2e_b.jpg",
-        width: 320,
-        height: 174,
-        tags: [
-            { value: "Nature", title: "Nature" },
-            { value: "Flora", title: "Flora" },
-        ],
-        caption: "After Rain (Jeshu John - designerspics.com)",
+        src: "https://github.com/AnilKumar3494/ILCC-images/blob/main/image-gallery/Bishop%20-%20John-Macantire-2.jpeg?raw=true",
+        width: 500,
+        height: 254,
     },
     {
         src: "https://c2.staticflickr.com/9/8356/28897120681_3b2c0f43e0_b.jpg",

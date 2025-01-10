@@ -14,7 +14,12 @@ const SocialLinks = () => {
   return (
     <div className="flex gap-3">
       {socialLinksData.socialLinks.map((socialInfo) => (
-        <a href={socialInfo.href} key={socialInfo.id} title={socialInfo.title}>
+        <a
+          href={socialInfo.href}
+          key={socialInfo.id}
+          title={socialInfo.title}
+          target="_blank"
+        >
           <FontAwesomeIcon
             icon={iconMappings[socialInfo.iconName]}
             className="fa_icons size-6 hover:scale-125 transition-all duration-200 ease-in-out"
