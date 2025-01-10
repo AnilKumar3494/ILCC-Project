@@ -22,7 +22,7 @@ export default function Masonary() {
   //   };
 
   return (
-    <div>
+    <div className="masonary_container overflow-hidden">
       <Gallery
         images={images}
         enableImageSelection={false}
