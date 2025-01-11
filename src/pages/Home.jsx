@@ -55,14 +55,14 @@ const Home = () => {
         </button>
       </section>
 
-      <section className="sermons" id="sermons">
+      {/* <section className="sermons" id="sermons">
         <div className="seromns_content">
-          {/* might chage */}
+         
           <h2>Picked Sermons</h2>
           <h4>Our lives in the word of God</h4>
         </div>
         <ImageGallery sermonsData={sermonsData} />
-      </section>
+      </section> */}
 
       <section className="upcoming_events" id="events">
         <div>
@@ -72,13 +72,13 @@ const Home = () => {
         <UpcomingEvents />
       </section>
 
-      <section className="image_gallery">
+      {/* <section className="image_gallery">
         <div className="seromns_content">
           <h2>IMAGES COLLECTION</h2>
           <h4>Sharing our faith and community stories</h4>
           <Masonary />
         </div>
-      </section>
+      </section> */}
     </main>
   );
 };

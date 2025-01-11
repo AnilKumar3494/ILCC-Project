@@ -8,7 +8,7 @@
   text-align: center;
 }
 .dashboard {
-  height: 80dvh;
+  height: 70dvh;
 
   display: grid;
   place-items: center;

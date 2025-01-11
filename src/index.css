@@ -106,6 +106,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  color-scheme: dark light;
 }
 
 /* Remove default margin */
