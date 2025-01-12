@@ -5,28 +5,28 @@
   font-family: var(--ff-poppins);
   padding-block: 1rem;
 
-  /* border: 2px solid maroon; */
-  /* max-height: 18dvh; */
-
-  /* winter  */
   background-image: var(--nameDisplay-bg-img);
 
   background-position: top;
 
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 5rem;
+  justify-content: space-around;
+
   /* gap: 4rem; */
 }
+
 .name_display img {
   width: 130px;
+
+  @media (600px <= width <= 800px) {
+    width: 110px;
+  }
 }
 
 .name_display h1 {
   font-weight: bold;
   font-family: var(--ff-poppins);
-  font-size: var(--fs-namedisplay);
   color: var(--top-bar-text);
   text-transform: uppercase;
   letter-spacing: 1.4px;
@@ -35,5 +35,7 @@
 .name_display span {
   color: var(--background-color);
   color: var(--top-bar-text);
+  font-size: var(--span-fontSize);
+  font-style: italic;
   letter-spacing: 1.4px;
 }

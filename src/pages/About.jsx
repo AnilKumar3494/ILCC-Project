@@ -23,7 +23,7 @@ const About = () => {
 
         <section className="aboutus_container">
           <div class="banner_content">
-            <h2>ABOUT US</h2>
+            <h1>ABOUT US</h1>
           </div>
 
           <div className="aboutus_content_container">

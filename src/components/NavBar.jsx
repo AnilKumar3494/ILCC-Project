@@ -5,6 +5,8 @@ import "./NavBar.css";
 
 const NavBar = () => {
   const [dropdownOpen, setDropdownOpen] = useState(null);
+  const [menuOpen, setMenuOpen] = useState(false);
+
   const location = useLocation();
   const navigate = useNavigate();
   const navRef = useRef(null);
@@ -28,11 +30,25 @@ const NavBar = () => {
       navigate(path);
     }
     setDropdownOpen(null);
+    setMenuOpen(false);
+  };
+
+  const handleHambugerToggle = () => {
+    setMenuOpen((prev) => !prev);
   };
 
   return (
-    <nav className="main_nav_container inline_padding" ref={navRef}>
-      <ul className="navlinks">
+    <nav className="main_nav_container" ref={navRef}>
+      <button
+        className={`hamburger ${menuOpen ? "open" : ""}`}
+        onClick={handleHambugerToggle}
+      >
+        <span className="bar"></span>
+        <span className="bar"></span>
+        <span className="bar"></span>
+      </button>
+
+      <ul className={`navlinks ${menuOpen ? "open" : ""}`}>
         {navLinks.navlinks.map((navLinkItem) => (
           <li
             key={navLinkItem.id}

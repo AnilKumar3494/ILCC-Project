@@ -41,25 +41,9 @@
   --main-bg-img: url("https://img.freepik.com/free-vector/winter-snowflake-background-christmas-aesthetic-doodle-white-vector_53876-151488.jpg?t=st=1735935337~exp=1735938937~hmac=77b3e4949a8ead0c1482315b60be9a514a70b24ac49abaa043c2dc1edf97d966&w=2000");
   --footer-bg-img: url("https://img.freepik.com/free-photo/ai-generated-fall-leaves-picture_23-2150648626.jpg?t=st=1736301458~exp=1736305058~hmac=d660ba6bff6bef8ba0da15b00794cab2efdd909f5ab95afa9cecda952e9346f1&w=1480");
 
-  /* Smaller Screens below 800 */
-  --fs-100: 0.425rem;
-  --fs-200: 0.725rem;
-  --fs-300: 0.5rem;
-  --fs-400: 0.65rem;
-  /* --fs-500: 0.825rem; */
-  --fs-550: 1rem;
-  --fs-600: 1rem;
-  --fs-700: 1.25rem;
-  --fs-800: 2rem;
-  --fs-850: 1.9rem;
-
-  --fs-h1: 3vw;
-  --fs-h2: 2.5vw;
-  --fs-h3: 1.8vw;
-
-  --fs-para: 1vw;
-
-  --fs-namedisplay: 2.8vw;
+  /* responsive fonts */
+  --h1-fontSize: clamp(1.3rem, 4vw, 3.2rem);
+  --span-fontSize: clamp(0.8rem, 2.5vw, 2rem);
 
   --inline-padding: 0.5rem;
   /* --page-gap: ; */
@@ -68,36 +52,11 @@
 /* Medium screens (min-width: 50em or 800px) */
 @media only screen and (min-width: 50em) {
   :root {
-    --fs-100: 0.725rem;
-    --fs-200: 0.875rem;
-    --fs-300: 1rem;
-    --fs-400: 1.125rem;
-    /* --fs-500: 1rem; */
-    --fs-600: 2rem;
-    --fs-700: 2.75rem;
-    --fs-800: 3rem;
-    --fs-900: 4rem;
-
-    --inline-padding: 1rem;
-
-    --page-gap-l: 1.2rem;
   }
 }
 /* Large screens (min-width: 65em or 1040px) */
 @media only screen and (min-width: 65em) {
   :root {
-    --fs-100: 0.725rem;
-    --fs-200: 0.875rem;
-    --fs-300: 1rem;
-    --fs-400: 1.125rem;
-    /* --fs-500: 1rem; */
-    --fs-600: 2rem;
-    --fs-800: 2.3rem;
-    --fs-850: 4.5rem;
-    --fs-900: 5rem;
-
-    --inline-padding: 1.25rem;
-    --page-gap-l: 10rem;
   }
 }
 
@@ -226,7 +185,8 @@ h6 {
 }
 
 h1 {
-  font-size: var(--fs-h1);
+  font-size: var(--h1-fontSize);
+  font-weight: bold;
 }
 
 h2 {
