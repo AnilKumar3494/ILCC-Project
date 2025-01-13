@@ -41,23 +41,14 @@
   --main-bg-img: url("https://img.freepik.com/free-vector/winter-snowflake-background-christmas-aesthetic-doodle-white-vector_53876-151488.jpg?t=st=1735935337~exp=1735938937~hmac=77b3e4949a8ead0c1482315b60be9a514a70b24ac49abaa043c2dc1edf97d966&w=2000");
   --footer-bg-img: url("https://img.freepik.com/free-photo/ai-generated-fall-leaves-picture_23-2150648626.jpg?t=st=1736301458~exp=1736305058~hmac=d660ba6bff6bef8ba0da15b00794cab2efdd909f5ab95afa9cecda952e9346f1&w=1480");
 
-  /* responsive fonts */
+  /* responsive fluid fonts */
   --h1-fontSize: clamp(1.3rem, 4vw, 3.2rem);
+  --h2-fontSize: clamp(1.35rem, 4vw, 3rem);
   --span-fontSize: clamp(0.8rem, 2.5vw, 2rem);
 
   --inline-padding: 0.5rem;
   /* --page-gap: ; */
   --section-gaps: 3rem;
-}
-/* Medium screens (min-width: 50em or 800px) */
-@media only screen and (min-width: 50em) {
-  :root {
-  }
-}
-/* Large screens (min-width: 65em or 1040px) */
-@media only screen and (min-width: 65em) {
-  :root {
-  }
 }
 
 /* Box sizing rules */
@@ -190,7 +181,7 @@ h1 {
 }
 
 h2 {
-  font-size: var(--fs-h2);
+  font-size: var(--h2-fontSize);
   text-transform: capitalize;
   font-weight: 800;
 
@@ -217,7 +208,7 @@ a {
 
 a:hover {
   /* text-decoration: underline; */
-  color: var(--hover-link-color);
+  color: var(--nav-bar-text);
 }
 
 .fa_icons {

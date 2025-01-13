@@ -23,18 +23,14 @@ const Home = () => {
   return (
     <main className="home_section">
       <section className="dashboard bg_img">
-        <div className="dashboard_content_2">
-          <div className="content_and_buttons">
-            <div className="button_container">
-              <Link to={"/about"} className="button" title="About Us">
-                About Us
-              </Link>
-
-              <Link to={"/contact"} className="button" title="Contact Us">
-                Contact Us
-              </Link>
-            </div>
-          </div>
+        <div className="dashboard_screen"></div>
+        <div className="dashboard_buttons">
+          <Link to={"/about"} className="button">
+            About Us
+          </Link>
+          <Link to={"/contact"} className="button">
+            Contact Us
+          </Link>
         </div>
       </section>
 
