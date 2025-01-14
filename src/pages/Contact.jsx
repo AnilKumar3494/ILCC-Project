@@ -19,6 +19,7 @@ const Contact = () => {
           frameborder="0"
           marginheight="0"
           marginwidth="0"
+          style={{ backgroundColor: "transparent" }}
         >
           Loading…
         </iframe>
