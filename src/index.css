@@ -42,9 +42,23 @@
   --footer-bg-img: url("https://img.freepik.com/free-photo/ai-generated-fall-leaves-picture_23-2150648626.jpg?t=st=1736301458~exp=1736305058~hmac=d660ba6bff6bef8ba0da15b00794cab2efdd909f5ab95afa9cecda952e9346f1&w=1480");
 
   /* responsive fluid fonts */
-  --h1-fontSize: clamp(1.3rem, 4vw, 3.2rem);
-  --h2-fontSize: clamp(1.35rem, 4vw, 3rem);
-  --span-fontSize: clamp(0.8rem, 2.5vw, 2rem);
+  /* headings */
+  --h1-fontSize: clamp(1.3rem, 4vw, 3rem);
+  --h2-fontSize: clamp(1.6rem, 3.5vw, 3rem);
+  --h3-fontSize: clamp(1.3rem, 2vw, 2.1rem);
+  --h4-fontSize: clamp(1rem, 1.5vw, 1.6rem);
+  --h5-fontSize: clamp(0.9rem, 1.5vw, 1.2rem);
+
+  /* paragraph */
+  --para-primary-fs: clamp(0.9rem, 2vw, 1.3rem);
+  --para-secondary-fs: clamp(0.85rem, 1.5vw, 1.1rem);
+  --para-history-fs: clamp(0.7rem, 1.1vw, 1.1rem);
+
+  /* span */
+  --span-fontSize: clamp(0.8rem, 2.5vw, 1.6rem);
+
+  /* buttons */
+  --btn-fontSize: clamp(0.9rem, 1vw, 1.1rem);
 
   --inline-padding: 0.5rem;
   /* --page-gap: ; */
@@ -182,28 +196,34 @@ h1 {
 
 h2 {
   font-size: var(--h2-fontSize);
-  text-transform: capitalize;
-  font-weight: 800;
-
+  text-transform: uppercase;
+  font-weight: 900;
+  color: #000;
   text-align: center;
 }
 h3 {
-  font-size: var(--fs-h3);
+  font-size: var(--h3-fontSize);
   font-weight: 600;
+  color: #222;
 }
 h4 {
-  font-size: var(--fs-400);
+  font-size: var(--h4-fontSize);
+  font-weight: 600;
+  font-style: italic;
+}
+h5 {
+  font-size: var(--h5-fontSize);
+  font-weight: 600;
 }
 
 p {
-  font-size: var(--fs-para);
+  font-size: var(--para-secondary-fs);
 }
 
 a {
-  font-size: var(--fs-500);
+  font-size: var(--btn-fontSize);
   font-family: var(--ff-poppins);
   color: var(--link-color);
-  color: #fff;
 }
 
 a:hover {
@@ -212,7 +232,7 @@ a:hover {
 }
 
 .fa_icons {
-  font-size: var(--fs-500);
+  font-size: var(--para-history-fs);
   color: var(--clr-primary-900);
 }
 
@@ -252,7 +272,7 @@ a:hover {
   border-radius: 5rem;
   color: #fff;
 
-  font-size: var(--fs-500);
+  font-size: var(--btn-fontSize);
   font-weight: 600;
   padding-top: 0.7rem;
   padding-bottom: 0.8rem;

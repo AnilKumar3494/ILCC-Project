@@ -19,7 +19,7 @@ const UpcomingEvents = () => {
         opts={{
           align: "start",
         }}
-        className="carousel_container"
+        className="carousel_container upcoming_events"
       >
         <CarouselContent className="carousel_displayed">
           {upcomingEvents.map((upcomingEvent) => (

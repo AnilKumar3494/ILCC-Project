@@ -41,7 +41,9 @@ const Accordian = () => {
                       <ul>
                         {subSection.list &&
                           subSection.list.map((listItem, listIndex) => (
-                            <li key={listIndex}>{listItem}</li>
+                            <li key={listIndex}>
+                              <p>{listItem}</p>
+                            </li>
                           ))}
                       </ul>
                     )}

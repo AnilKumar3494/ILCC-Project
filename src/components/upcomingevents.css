@@ -1,11 +1,16 @@
 .carousel_container {
   position: relative;
 
-  padding-bottom: 2rem;
+  padding-bottom: 3rem;
+}
+
+.upcoming_events p {
+  font-size: var(--para-secondary-fs);
+  color: #333;
 }
 
 .carousel_item {
-  opacity: 0.9;
+  opacity: 0.95;
   /* border: 4px solid maroon; */
   transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
   padding-bottom: 0.5rem;
@@ -59,6 +64,8 @@
   transform: translateX(-50%); /* Center horizontally using transform */
   display: flex;
   gap: 1rem; /* Space between buttons */
+
+  padding-bottom: 1rem;
 }
 
 .arrow_buttons {
