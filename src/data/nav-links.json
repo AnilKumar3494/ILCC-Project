@@ -17,6 +17,7 @@
       "label": "Events",
       "path": "#events"
     },
+
     {
       "id": "about",
       "label": "About",
@@ -26,6 +27,11 @@
       "id": "history",
       "label": "History",
       "path": "/history"
+    },
+    {
+      "id": "retreat",
+      "label": "Retreat",
+      "path": "/retreat"
     },
     {
       "id": "contact",

@@ -10,6 +10,7 @@ import Footer from "./components/Footer";
 import ThemeSwitcher from "./components/ThemeSwitcher";
 import History from "./pages/History";
 import Masonary from "./components/Masonary";
+import Retreat from "./pages/Retreat";
 
 // import Header from "./components/Header";
 
@@ -24,7 +25,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/history" element={<History />} />
-        <Route path="/blog" element={<Blog />} />
+        <Route path="/retreat" element={<Retreat />} />
         <Route path="/contact" element={<Contact />} />
         {/* <Route path="/masonary" element={<Masonary />} /> */}
       </Routes>
