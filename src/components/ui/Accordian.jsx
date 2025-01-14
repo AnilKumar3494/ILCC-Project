@@ -5,7 +5,7 @@ import aboutUsContent from "../../data/about-us-content.json";
 
 const Accordian = () => {
   // Initialize with the first subsection open
-  const [openIndexes, setOpenIndexes] = useState(["2-0"]);
+  const [openIndexes, setOpenIndexes] = useState(["2-0", "2-1", "2-2"]);
 
   const toggleAccordion = (index) => {
     setOpenIndexes((prev) =>

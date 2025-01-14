@@ -13,7 +13,7 @@ const Contact = () => {
 
       <section>
         <iframe
-          src="https://docs.google.com/forms/d/e/1FAIpQLSf8r4WkwUaEaydtg0Cwt-6zjorsdGEE-2h6NpQelhVAtnVLDw/viewform?embedded=true"
+          src="https://docs.google.com/forms/d/e/1FAIpQLSem1uy1oVm9DDSKdPlrUcnXlb7TrQOGr01ETdp-_6P6iFlAbw/viewform?embedded=true"
           width="100%"
           height="952"
           frameborder="0"

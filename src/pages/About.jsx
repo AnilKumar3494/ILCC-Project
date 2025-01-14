@@ -5,7 +5,7 @@ import contactInfoData from "../data/contact-info-data.json";
 import aboutUsContent from "../data/about-us-content.json";
 
 import ImageGallery from "../components/ImageGallery";
-import RandomVerse from "@/components/RandomVerse";
+// import RandomVerse from "@/components/RandomVerse";
 import LocationMap from "@/components/LocationMap";
 import Accordian from "@/components/ui/Accordian";
 
