@@ -13,7 +13,7 @@
 }
 
 /* Responsive adjustment for nav container */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .main_nav_container {
     justify-content: flex-end;
   }
@@ -69,6 +69,8 @@
 /* Responsive navigation links */
 @media (max-width: 768px) {
   .navlinks {
+    display: none;
+    border: 2px solid skyblue;
     padding-bottom: 1rem;
 
     position: absolute;
@@ -83,11 +85,12 @@
     justify-content: center; /* Center vertically */
 
     gap: 1.5rem;
-    transition: right 0.3s ease;
+    transition: all 0.3s ease-in-out;
     z-index: 1000;
   }
 
   .navlinks.open {
+    display: flex;
     right: 0;
   }
 

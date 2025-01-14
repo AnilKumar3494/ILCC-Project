@@ -28,7 +28,9 @@ const Footer = () => {
                 className="logo hover:scale-105 transition-all duration-200 ease-in-out"
               />
             </Link>
-            <SocialLinks />
+            <div className="socaillinks_container flex items-center justify-center w-full">
+              <SocialLinks />
+            </div>
           </div>
 
           <div className="quicklinks_container">
@@ -62,7 +64,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="randomverse">
+        <div className="randomverse_container">
           <RandomVerse />
         </div>
 
