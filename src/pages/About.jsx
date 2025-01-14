@@ -36,7 +36,7 @@ const About = () => {
                     }`}
                   >
                     <div className="text">
-                      <h3>{section.title.toUpperCase()}</h3>
+                      <h3>{section.title}</h3>
                       {section.description && <p>{section.description}</p>}
                     </div>
                     <picture>
@@ -48,7 +48,7 @@ const About = () => {
                   </div>
                 ) : (
                   <div className="accordian">
-                    <h3>{section.title.toUpperCase()}</h3>
+                    <h3>{section.title}</h3>
                     {section.subSections && <Accordian />}
                   </div>
                 )}

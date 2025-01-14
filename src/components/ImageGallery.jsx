@@ -38,8 +38,8 @@ const ImageGallery = ({ sermonsData, masonaryImages, contactInfoData }) => {
                 className="card_img"
               />
               <div className="card_content">
-                <h4>{membersInfo.name}</h4>
-                <p>{membersInfo.role}</p>
+                <h5>{membersInfo.name}</h5>
+                <p style={{ fontStyle: "italic" }}>{membersInfo.role}</p>
               </div>
             </div>
           ))}

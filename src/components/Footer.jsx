@@ -26,10 +26,11 @@ const Footer = () => {
                 src="https://github.com/AnilKumar3494/ILCC-images/blob/main/logo/ILCC%20Logo%20New%20Final.png?raw=true"
                 alt="ILCC"
                 className="logo hover:scale-105 transition-all duration-200 ease-in-out"
-                style={{ width: "160px" }}
               />
             </Link>
-            <SocialLinks />
+            <div className="socaillinks_container flex items-center justify-center w-full">
+              <SocialLinks />
+            </div>
           </div>
 
           <div className="quicklinks_container">
@@ -39,10 +40,10 @@ const Footer = () => {
                 <li key={link.id} className="hover:underline">
                   <Link to={link.path}>
                     <div className="quicklinks_withicon ">
-                      <span>{link.label}</span>{" "}
-                      <span>
+                      <p>{link.label}</p>
+                      <p>
                         <VscLinkExternal />
-                      </span>
+                      </p>
                     </div>
                   </Link>
                 </li>
@@ -50,11 +51,9 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="footer_links">
-            <div className="footer_contactDetails">
-              <h4>Contact Us</h4>
-              <ContactDetails maxId={3} />
-            </div>
+          <div className="contactlinks_container">
+            <h4>Contact Us</h4>
+            <ContactDetails maxId={3} />
           </div>
 
           <div className="subscribe_container">
@@ -65,7 +64,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="randomverse">
+        <div className="randomverse_container">
           <RandomVerse />
         </div>
 

@@ -24,9 +24,9 @@ const Contact = () => {
         </iframe>
       </section>
 
-      <section>
+      {/* <section>
         <SocialMediaIntegration />
-      </section>
+      </section> */}
     </main>
   );
 };

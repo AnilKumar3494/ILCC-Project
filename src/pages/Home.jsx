@@ -23,18 +23,14 @@ const Home = () => {
   return (
     <main className="home_section">
       <section className="dashboard bg_img">
-        <div className="dashboard_content_2">
-          <div className="content_and_buttons">
-            <div className="button_container">
-              <Link to={"/about"} className="button" title="About Us">
-                About Us
-              </Link>
-
-              <Link to={"/contact"} className="button" title="Contact Us">
-                Contact Us
-              </Link>
-            </div>
-          </div>
+        <div className="dashboard_screen"></div>
+        <div className="dashboard_buttons">
+          <Link to={"/about"} className="button">
+            About Us
+          </Link>
+          <Link to={"/contact"} className="button">
+            Contact Us
+          </Link>
         </div>
       </section>
 
@@ -55,14 +51,14 @@ const Home = () => {
         </button>
       </section>
 
-      <section className="sermons" id="sermons">
+      {/* <section className="sermons" id="sermons">
         <div className="seromns_content">
-          {/* might chage */}
+         
           <h2>Picked Sermons</h2>
           <h4>Our lives in the word of God</h4>
         </div>
         <ImageGallery sermonsData={sermonsData} />
-      </section>
+      </section> */}
 
       <section className="upcoming_events" id="events">
         <div>
@@ -72,13 +68,13 @@ const Home = () => {
         <UpcomingEvents />
       </section>
 
-      <section className="image_gallery">
+      {/* <section className="image_gallery">
         <div className="seromns_content">
           <h2>IMAGES COLLECTION</h2>
           <h4>Sharing our faith and community stories</h4>
           <Masonary />
         </div>
-      </section>
+      </section> */}
     </main>
   );
 };

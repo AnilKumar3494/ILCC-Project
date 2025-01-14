@@ -15,8 +15,8 @@ const HistoryTimeLine = () => {
           className={`timeline-item ${index % 2 === 0 ? "left" : "right"}`}
           key={historyInfo.id}
         >
-          <h3>{historyInfo.title}</h3>
-          <p>{historyInfo.date}</p>
+          <h4>{historyInfo.title}</h4>
+          <h5 style={{ fontStyle: "italic" }}>{historyInfo.date}</h5>
           <p>{historyInfo.shortDesc}</p>
         </div>
       ))}

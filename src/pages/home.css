@@ -8,74 +8,41 @@
   text-align: center;
 }
 .dashboard {
-  height: 80dvh;
+  height: 70dvh;
+  position: relative;
 
-  display: grid;
-  place-items: center;
-  text-align: center;
+  @media (max-width: 600px) {
+    height: 50dvh;
+  }
 }
 
 .dashboard.bg_img {
   background: url(../assets/images/church-main.jpg);
   background-size: cover;
-  background-position: center calc(30%);
+  background-position: center center;
   background-repeat: no-repeat;
-
-  position: relative;
 }
-.dashboard.bg_img::after {
-  content: "";
+
+.dashboard_screen {
   position: absolute;
-  background-color: rgba(2, 2, 2, 0.2);
+  background-color: black;
   inset: 0;
-
-  /* z-index: -1; */
+  opacity: 0.25;
+  isolation: isolate;
 }
 
-.dashboard_content_1,
-.dashboard_content_2 {
+.dashboard_buttons {
+  /* border: 2px solid red; */
   display: flex;
-  flex-direction: column;
+  align-items: center;
   justify-content: center;
-
   width: 100%;
+  gap: 2rem;
 
   position: absolute;
-
+  bottom: 15%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 100;
-  /* border: 5px solid lime; */
-}
-
-.dashboard_content_1 {
-  top: 20%;
-}
-.dashboard_content_1 h1 {
-  font-family: Lobster;
-  color: var(--primary-color);
-  z-index: 1000;
-}
-.dashboard_content_2 {
-  top: 80%;
-  width: 80%;
-
-  @media (max-width: 800px) {
-    top: 70%;
-  }
-}
-
-.dashboard .content_and_buttons {
-  display: flex;
-  flex-direction: column;
-
-  width: 100%;
-  align-items: center;
-  text-align: center;
-
-  margin-inline: auto;
-
-  gap: 1rem;
+  transform: translateX(-50%);
 }
 
 .kreupasanam_event {

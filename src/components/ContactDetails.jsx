@@ -30,7 +30,9 @@ const ContactDetails = ({ maxId }) => {
                 icon={iconMappings[info.iconName]}
                 className="fa_icons"
               />
-              <span className="pl-2">{info.address}</span>
+              <span className="pl-2" style={{}}>
+                {info.address}
+              </span>
             </a>
           </div>
         ))}

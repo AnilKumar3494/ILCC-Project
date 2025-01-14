@@ -57,8 +57,12 @@
   gap: var(--grid-gap);
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
 
-  @media (max-width: 800px) {
+  @media (max-width: 900px) {
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  }
+
+  @media (max-width: 700px) {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
   }
 }
 
@@ -95,7 +99,6 @@
 
 .card_content p {
   margin: 0;
-  font-size: 0.9rem;
   font-weight: 400;
   color: #666;
 }

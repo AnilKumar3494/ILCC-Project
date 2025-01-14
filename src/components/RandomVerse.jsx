@@ -7,10 +7,10 @@ const randomIndexGen = Math.floor(Math.random() * versesData.verses.length);
 const RandomVerse = () => {
   return (
     <div className="randomverse">
-      <h4 style={{ fontStyle: "italic", fontSize: "var(--fs-400)" }}>
+      <h5 style={{ fontStyle: "italic", fontWeight: "400" }}>
         {versesData.verses[randomIndexGen].text}
         <span> ~{versesData.verses[randomIndexGen].reference}</span>
-      </h4>
+      </h5>
     </div>
   );
 };

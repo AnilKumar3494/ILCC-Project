@@ -4,6 +4,14 @@
   flex-direction: column;
   align-items: center;
   position: relative;
+
+  /* border: 2px solid red; */
+  margin-block: 2rem;
+  padding-inline: 4vw;
+}
+
+.history-container p {
+  font-size: var(--para-history-fs);
 }
 
 /* The vertical line */
