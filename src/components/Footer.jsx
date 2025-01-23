@@ -59,7 +59,9 @@ const Footer = () => {
           <div className="subscribe_container">
             <h4>Be a Part of Us</h4>
             <button className="button">
-              <a href="">Join Us</a>
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSem1uy1oVm9DDSKdPlrUcnXlb7TrQOGr01ETdp-_6P6iFlAbw/viewform?embedded=true">
+                Join Us
+              </a>
             </button>
           </div>
         </div>
