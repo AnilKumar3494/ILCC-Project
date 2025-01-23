@@ -3,14 +3,7 @@
     {
       "id": "home",
       "label": "Home",
-      "path": "/",
-      "children": [
-        {
-          "id": "sermons",
-          "label": "Sermons",
-          "path": "#sermons"
-        }
-      ]
+      "path": "/"
     },
     {
       "id": "events",
