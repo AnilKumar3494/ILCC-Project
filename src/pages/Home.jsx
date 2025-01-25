@@ -41,7 +41,7 @@ const Home = () => {
             target="_blank"
           >
             <img
-              src="https://github.com/AnilKumar3494/ILCC-images/blob/main/events/kreupasanamNew.jpeg?raw=true"
+              src="https://github.com/AnilKumar3494/ILCC-images/blob/main/events/updatedKru.jpeg?raw=true"
               alt=""
             />
           </a>
