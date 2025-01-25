@@ -69,10 +69,10 @@ const Footer = () => {
         <div className="randomverse_container">
           <RandomVerse />
         </div>
-
+        {/* 
         <div className="copyright">
           <p>Here @copyright comes</p>
-        </div>
+        </div> */}
       </footer>
     </main>
   );
